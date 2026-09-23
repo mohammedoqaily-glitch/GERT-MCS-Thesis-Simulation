@@ -1,0 +1,5 @@
+Loop_ID	string
+Baseline_Cap	int64
+Proposed_Cap	int64
+Approval_Status	string
+Notes	string

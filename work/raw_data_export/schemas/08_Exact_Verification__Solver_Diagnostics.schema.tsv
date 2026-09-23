@@ -1,0 +1,5 @@
+System	string
+Method	string
+Iterations	int64
+Residual_Norm	double
+Status	string

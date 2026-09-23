@@ -1,0 +1,11 @@
+﻿Setting,Value
+PERT input,C:\Users\moham\Documents\Codex\2026-07-28\build\release\VO_PERT_GERT_Full_Simulation_Package\01_AUTHORITATIVE_INPUTS\PERT Input.docx
+GERT input,C:\Users\moham\Documents\Codex\2026-07-28\build\release\VO_PERT_GERT_Full_Simulation_Package\01_AUTHORITATIVE_INPUTS\GERT nput.docx
+PERT SHA-256,7984b5b2e29928345772f0110ea1fa1c9ceb4121dc2e3aed4737112a98bc1f58
+GERT SHA-256,dc34b00fcd3988146da0760ac18499eeca9d8596601c09445ca5d956c4ae6387
+Replications,50000
+Root seed,42
+Distribution,Beta-PERT
+Lambda,4
+Rounding,ceil once per activity/traversal
+Time unit,working days

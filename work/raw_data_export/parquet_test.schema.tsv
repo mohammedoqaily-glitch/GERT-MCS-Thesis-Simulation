@@ -1,0 +1,4 @@
+id	int64
+name	string
+value	double
+flag	bool

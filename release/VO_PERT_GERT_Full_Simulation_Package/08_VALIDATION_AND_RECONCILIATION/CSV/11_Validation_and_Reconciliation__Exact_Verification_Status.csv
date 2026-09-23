@@ -1,0 +1,4 @@
+Test,Status,Value,Requirement
+Exact finite-state status,PASS,0.9999999997009128,Total absorption approximately 1
+Monte Carlo acceptance,PASS,,All mandatory comparisons pass
+Spectral radius,PASS,0.4386253551298952,Required < 1

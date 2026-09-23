@@ -1,0 +1,4 @@
+Topic,Limitation
+Excel COM,Unavailable in the restricted execution session; every workbook receives two independent openpyxl opens and ZIP validation
+Fixed-parameter sensitivity,"Baseline iteration-level variability can support driver analysis, but sensitivity to fixed model parameters such as probabilities, O/ML/P bounds, and Loop Caps requires additional parameter-variation scenarios."
+Causality,"Baseline correlations and regressions are associations, not causal effects"

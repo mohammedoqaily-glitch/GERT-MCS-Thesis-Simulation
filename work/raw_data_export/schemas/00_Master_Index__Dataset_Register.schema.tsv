@@ -1,0 +1,12 @@
+Dataset	string
+Workbook	string
+Worksheet	string
+Excel_Data_Rows	int64
+Column_Count	int64
+CSV_File	string
+CSV_SHA256	string
+Parquet_File	string
+Parquet_SHA256	string
+CSV_Rows	int64
+Parquet_Rows	int64
+Parity_Status	string

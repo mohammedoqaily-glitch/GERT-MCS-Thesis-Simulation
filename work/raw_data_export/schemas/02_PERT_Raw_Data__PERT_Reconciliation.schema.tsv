@@ -1,0 +1,6 @@
+Iteration_ID	int64
+Rounded_Component_Sum	int64
+Recorded_Total	int64
+Difference	int64
+Reconciled	bool
+Reconciliation_Error	string

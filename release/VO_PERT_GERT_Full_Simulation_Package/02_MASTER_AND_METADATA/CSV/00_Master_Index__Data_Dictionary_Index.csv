@@ -1,0 +1,12 @@
+Workbook,Worksheet,Scope
+01_Input_and_Metadata.xlsx,Data Dictionary,Local column dictionary
+03_PERT_Analysis_Ready.xlsx,Data Dictionary,Local column dictionary
+04_GERT_Iteration_Data.xlsx,Data Dictionary,Local column dictionary
+05_GERT_Traversal_Data.xlsx,Traversal Data Dictionary,Local column dictionary
+06_GERT_Structure_Events.xlsx,Data Dictionary,Local column dictionary
+07_GERT_Analysis_Ready.xlsx,Data Dictionary,Local column dictionary
+08_Exact_Verification.xlsx,Data Dictionary,Local column dictionary
+09_Convergence_Data.xlsx,Data Dictionary,Local column dictionary
+10_Sensitivity_Ready_Data.xlsx,Data Dictionary,Local column dictionary
+11_Validation_and_Reconciliation.xlsx,Data Dictionary,Local column dictionary
+Data_Dictionary.xlsx,Data Dictionary,Complete cross-workbook dictionary

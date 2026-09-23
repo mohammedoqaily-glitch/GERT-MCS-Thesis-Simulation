@@ -1,0 +1,11 @@
+Iteration_ID	int64
+Outcome	string
+Total_Duration	int64
+Above_Outcome_P80	bool
+Above_Outcome_P90	bool
+Above_Outcome_P95	bool
+Above_Outcome_P99	bool
+Transition_Count	int64
+Dispute_Visited	bool
+Any_Loop	bool
+Any_Cap_Reached	bool

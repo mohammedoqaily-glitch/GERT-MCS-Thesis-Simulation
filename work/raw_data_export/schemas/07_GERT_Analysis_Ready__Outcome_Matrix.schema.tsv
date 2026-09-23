@@ -1,0 +1,8 @@
+Iteration_ID	int64
+Outcome	string
+Successful_Binary	bool
+Terminated_Binary	bool
+Final_Node	string
+Total_Duration	int64
+Transition_Count	int64
+Dispute_Visited	bool

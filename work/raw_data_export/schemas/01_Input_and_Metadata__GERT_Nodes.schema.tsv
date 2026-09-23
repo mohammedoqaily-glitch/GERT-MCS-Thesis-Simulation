@@ -1,0 +1,6 @@
+Node_ID	string
+Node_Name	string
+Input_Logic	string
+Output_Logic	string
+Role	string
+Word_Row	int64

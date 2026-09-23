@@ -1,0 +1,12 @@
+/release/VO_PERT_GERT_Full_Simulation_Package/03_PERT_RESULTS/02_PERT_Raw_Data.xlsx filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/03_PERT_RESULTS/CSV/02_PERT_Raw_Data__PERT_Iterations_Wide.csv filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/04_GERT_RESULTS/04_GERT_Iteration_Data.xlsx filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/04_GERT_RESULTS/05_GERT_Traversal_Data.xlsx filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/04_GERT_RESULTS/06_GERT_Structure_Events.xlsx filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/04_GERT_RESULTS/07_GERT_Analysis_Ready.xlsx filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/04_GERT_RESULTS/CSV/04_GERT_Iteration_Data__Iteration_Summary.csv filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/04_GERT_RESULTS/CSV/07_GERT_Analysis_Ready__Iteration_Feature_Matrix.csv filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/07_SENSITIVITY_READY/10_Sensitivity_Ready_Data.xlsx filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/07_SENSITIVITY_READY/CSV/10_Sensitivity_Ready_Data__GERT_Sensitivity_Matrix.csv filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/08_VALIDATION_AND_RECONCILIATION/11_Validation_and_Reconciliation.xlsx filter=lfs diff=lfs merge=lfs -text
+/release/VO_PERT_GERT_Full_Simulation_Package/08_VALIDATION_AND_RECONCILIATION/Parquet/11_Validation_and_Reconciliation__Reproducibility_Comparison.parquet filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,12 @@
+Iteration_ID	int64
+Step_Number	int64
+Arc_Tag	string
+From_Node	string
+To_Node	string
+O	double
+ML	double
+P	double
+Beta_Y	double
+Raw_Duration	double
+Rounded_Duration	int64
+Outcome_After_Step	string

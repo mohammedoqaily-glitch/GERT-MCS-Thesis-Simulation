@@ -1,0 +1,13 @@
+Dataset	string
+Workbook	string
+Worksheet	string
+Column_Name	string
+Data_Type	string
+Unit	string
+Definition	string
+Calculation	string
+Source	string
+Allowed_Values	string
+Missing_Value_Rule	string
+Sensitivity_Use	string
+Notes	string

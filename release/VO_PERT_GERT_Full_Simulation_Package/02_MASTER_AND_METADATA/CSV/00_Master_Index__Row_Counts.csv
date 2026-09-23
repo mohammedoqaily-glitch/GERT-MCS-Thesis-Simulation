@@ -1,0 +1,116 @@
+Dataset,Workbook,Worksheet,Excel_Rows,CSV_Rows,Parquet_Rows,Status
+Input_Validation_Report::Input Validation,Input_Validation_Report.xlsx,Input Validation,20,20,20,PASS
+01_Input_and_Metadata::Run Metadata,01_Input_and_Metadata.xlsx,Run Metadata,18,18,18,PASS
+01_Input_and_Metadata::PERT Input,01_Input_and_Metadata.xlsx,PERT Input,6,6,6,PASS
+01_Input_and_Metadata::GERT Nodes,01_Input_and_Metadata.xlsx,GERT Nodes,10,10,10,PASS
+01_Input_and_Metadata::GERT Arcs,01_Input_and_Metadata.xlsx,GERT Arcs,30,30,30,PASS
+01_Input_and_Metadata::Probability Groups,01_Input_and_Metadata.xlsx,Probability Groups,7,7,7,PASS
+01_Input_and_Metadata::Loop Register,01_Input_and_Metadata.xlsx,Loop Register,10,10,10,PASS
+01_Input_and_Metadata::Parameter Register,01_Input_and_Metadata.xlsx,Parameter Register,146,146,146,PASS
+01_Input_and_Metadata::Input Audit,01_Input_and_Metadata.xlsx,Input Audit,20,20,20,PASS
+01_Input_and_Metadata::Software Versions,01_Input_and_Metadata.xlsx,Software Versions,6,6,6,PASS
+01_Input_and_Metadata::Random Streams,01_Input_and_Metadata.xlsx,Random Streams,3,3,3,PASS
+01_Input_and_Metadata::Data Dictionary,01_Input_and_Metadata.xlsx,Data Dictionary,81,81,81,PASS
+02_PERT_Raw_Data::PERT Iterations Wide,02_PERT_Raw_Data.xlsx,PERT Iterations Wide,50000,50000,50000,PASS
+02_PERT_Raw_Data::PERT Durations Long,02_PERT_Raw_Data.xlsx,PERT Durations Long,300000,300000,300000,PASS
+02_PERT_Raw_Data::PERT Raw Beta Samples,02_PERT_Raw_Data.xlsx,PERT Raw Beta Samples,300000,300000,300000,PASS
+02_PERT_Raw_Data::PERT Reconciliation,02_PERT_Raw_Data.xlsx,PERT Reconciliation,50000,50000,50000,PASS
+02_PERT_Raw_Data::PERT Analytical PMFs,02_PERT_Raw_Data.xlsx,PERT Analytical PMFs,125,125,125,PASS
+02_PERT_Raw_Data::PERT Exact Moments,02_PERT_Raw_Data.xlsx,PERT Exact Moments,7,7,7,PASS
+03_PERT_Analysis_Ready::Iteration Matrix,03_PERT_Analysis_Ready.xlsx,Iteration Matrix,50000,50000,50000,PASS
+03_PERT_Analysis_Ready::Summary Statistics,03_PERT_Analysis_Ready.xlsx,Summary Statistics,7,7,7,PASS
+03_PERT_Analysis_Ready::P1-P99,03_PERT_Analysis_Ready.xlsx,P1-P99,99,99,99,PASS
+03_PERT_Analysis_Ready::ECDF,03_PERT_Analysis_Ready.xlsx,ECDF,42,42,42,PASS
+03_PERT_Analysis_Ready::Histogram Data,03_PERT_Analysis_Ready.xlsx,Histogram Data,42,42,42,PASS
+03_PERT_Analysis_Ready::Activity Statistics,03_PERT_Analysis_Ready.xlsx,Activity Statistics,6,6,6,PASS
+03_PERT_Analysis_Ready::Correlation Matrix,03_PERT_Analysis_Ready.xlsx,Correlation Matrix,7,7,7,PASS
+03_PERT_Analysis_Ready::Spearman Sensitivity,03_PERT_Analysis_Ready.xlsx,Spearman Sensitivity,6,6,6,PASS
+03_PERT_Analysis_Ready::Regression Matrix,03_PERT_Analysis_Ready.xlsx,Regression Matrix,50000,50000,50000,PASS
+03_PERT_Analysis_Ready::Convergence,03_PERT_Analysis_Ready.xlsx,Convergence,100,100,100,PASS
+03_PERT_Analysis_Ready::Analytical Comparison,03_PERT_Analysis_Ready.xlsx,Analytical Comparison,1,1,1,PASS
+03_PERT_Analysis_Ready::Data Dictionary,03_PERT_Analysis_Ready.xlsx,Data Dictionary,102,102,102,PASS
+04_GERT_Iteration_Data::Iteration Summary,04_GERT_Iteration_Data.xlsx,Iteration Summary,50000,50000,50000,PASS
+04_GERT_Iteration_Data::Path Register,04_GERT_Iteration_Data.xlsx,Path Register,380,380,380,PASS
+04_GERT_Iteration_Data::Outcome Summary,04_GERT_Iteration_Data.xlsx,Outcome Summary,4,4,4,PASS
+04_GERT_Iteration_Data::Successful Iterations,04_GERT_Iteration_Data.xlsx,Successful Iterations,28871,28871,28871,PASS
+04_GERT_Iteration_Data::Terminated Iterations,04_GERT_Iteration_Data.xlsx,Terminated Iterations,21129,21129,21129,PASS
+04_GERT_Iteration_Data::Invalid Iterations,04_GERT_Iteration_Data.xlsx,Invalid Iterations,1,1,1,PASS
+04_GERT_Iteration_Data::Data Dictionary,04_GERT_Iteration_Data.xlsx,Data Dictionary,151,151,151,PASS
+05_GERT_Traversal_Data::Traversals Part 01,05_GERT_Traversal_Data.xlsx,Traversals Part 01,113403,113403,113403,PASS
+05_GERT_Traversal_Data::Traversals Part 02,05_GERT_Traversal_Data.xlsx,Traversals Part 02,113429,113429,113429,PASS
+05_GERT_Traversal_Data::Traversal Data Dictionary,05_GERT_Traversal_Data.xlsx,Traversal Data Dictionary,83,83,83,PASS
+06_GERT_Structure_Events::Node Visits,06_GERT_Structure_Events.xlsx,Node Visits,276832,276832,276832,PASS
+06_GERT_Structure_Events::Arc Activations,06_GERT_Structure_Events.xlsx,Arc Activations,223606,223606,223606,PASS
+06_GERT_Structure_Events::Arc Traversal Counts,06_GERT_Structure_Events.xlsx,Arc Traversal Counts,30,30,30,PASS
+06_GERT_Structure_Events::Arc Duration Records,06_GERT_Structure_Events.xlsx,Arc Duration Records,226832,226832,226832,PASS
+06_GERT_Structure_Events::Loop Events,06_GERT_Structure_Events.xlsx,Loop Events,6082,6082,6082,PASS
+06_GERT_Structure_Events::Loop Counts by Iteration,06_GERT_Structure_Events.xlsx,Loop Counts by Iteration,50000,50000,50000,PASS
+06_GERT_Structure_Events::Cap Events,06_GERT_Structure_Events.xlsx,Cap Events,147,147,147,PASS
+06_GERT_Structure_Events::Renormalisation Events,06_GERT_Structure_Events.xlsx,Renormalisation Events,138,138,138,PASS
+06_GERT_Structure_Events::Dispute Visits,06_GERT_Structure_Events.xlsx,Dispute Visits,1188,1188,1188,PASS
+06_GERT_Structure_Events::Transition Counts,06_GERT_Structure_Events.xlsx,Transition Counts,18,18,18,PASS
+06_GERT_Structure_Events::Data Dictionary,06_GERT_Structure_Events.xlsx,Data Dictionary,105,105,105,PASS
+07_GERT_Analysis_Ready::Iteration Feature Matrix,07_GERT_Analysis_Ready.xlsx,Iteration Feature Matrix,50000,50000,50000,PASS
+07_GERT_Analysis_Ready::Arc Activation Matrix,07_GERT_Analysis_Ready.xlsx,Arc Activation Matrix,50000,50000,50000,PASS
+07_GERT_Analysis_Ready::Arc Traversal Matrix,07_GERT_Analysis_Ready.xlsx,Arc Traversal Matrix,50000,50000,50000,PASS
+07_GERT_Analysis_Ready::Arc Duration Matrix,07_GERT_Analysis_Ready.xlsx,Arc Duration Matrix,50000,50000,50000,PASS
+07_GERT_Analysis_Ready::Node Visit Matrix,07_GERT_Analysis_Ready.xlsx,Node Visit Matrix,50000,50000,50000,PASS
+07_GERT_Analysis_Ready::Loop Count Matrix,07_GERT_Analysis_Ready.xlsx,Loop Count Matrix,50000,50000,50000,PASS
+07_GERT_Analysis_Ready::Outcome Matrix,07_GERT_Analysis_Ready.xlsx,Outcome Matrix,50000,50000,50000,PASS
+07_GERT_Analysis_Ready::Path Metrics,07_GERT_Analysis_Ready.xlsx,Path Metrics,380,380,380,PASS
+07_GERT_Analysis_Ready::Summary Statistics,07_GERT_Analysis_Ready.xlsx,Summary Statistics,4,4,4,PASS
+07_GERT_Analysis_Ready::P1-P99 by Outcome,07_GERT_Analysis_Ready.xlsx,P1-P99 by Outcome,198,198,198,PASS
+07_GERT_Analysis_Ready::ECDF Data,07_GERT_Analysis_Ready.xlsx,ECDF Data,301,301,301,PASS
+07_GERT_Analysis_Ready::Histogram Data,07_GERT_Analysis_Ready.xlsx,Histogram Data,301,301,301,PASS
+07_GERT_Analysis_Ready::Correlation Register,07_GERT_Analysis_Ready.xlsx,Correlation Register,260,260,260,PASS
+07_GERT_Analysis_Ready::Data Dictionary,07_GERT_Analysis_Ready.xlsx,Data Dictionary,344,344,344,PASS
+08_Exact_Verification::State Space Summary,08_Exact_Verification.xlsx,State Space Summary,7,7,7,PASS
+08_Exact_Verification::Solver Diagnostics,08_Exact_Verification.xlsx,Solver Diagnostics,3,3,3,PASS
+08_Exact_Verification::Exact Outcomes,08_Exact_Verification.xlsx,Exact Outcomes,3,3,3,PASS
+08_Exact_Verification::Exact Duration Metrics,08_Exact_Verification.xlsx,Exact Duration Metrics,3,3,3,PASS
+08_Exact_Verification::Exact Transition Metrics,08_Exact_Verification.xlsx,Exact Transition Metrics,1,1,1,PASS
+08_Exact_Verification::Exact Dispute Metrics,08_Exact_Verification.xlsx,Exact Dispute Metrics,2,2,2,PASS
+08_Exact_Verification::Exact Loop Activation,08_Exact_Verification.xlsx,Exact Loop Activation,10,10,10,PASS
+08_Exact_Verification::Exact Cap Probabilities,08_Exact_Verification.xlsx,Exact Cap Probabilities,10,10,10,PASS
+08_Exact_Verification::Monte Carlo Comparison,08_Exact_Verification.xlsx,Monte Carlo Comparison,28,28,28,PASS
+08_Exact_Verification::Acceptance Limits,08_Exact_Verification.xlsx,Acceptance Limits,28,28,28,PASS
+08_Exact_Verification::Residual Diagnostics,08_Exact_Verification.xlsx,Residual Diagnostics,3,3,3,PASS
+08_Exact_Verification::Data Dictionary,08_Exact_Verification.xlsx,Data Dictionary,59,59,59,PASS
+09_Convergence_Data::PERT Checkpoints,09_Convergence_Data.xlsx,PERT Checkpoints,100,100,100,PASS
+09_Convergence_Data::GERT Outcome Checkpoints,09_Convergence_Data.xlsx,GERT Outcome Checkpoints,100,100,100,PASS
+09_Convergence_Data::GERT Duration Checkpoints,09_Convergence_Data.xlsx,GERT Duration Checkpoints,100,100,100,PASS
+09_Convergence_Data::Loop Checkpoints,09_Convergence_Data.xlsx,Loop Checkpoints,1000,1000,1000,PASS
+09_Convergence_Data::Cap Checkpoints,09_Convergence_Data.xlsx,Cap Checkpoints,1000,1000,1000,PASS
+09_Convergence_Data::Dispute Checkpoints,09_Convergence_Data.xlsx,Dispute Checkpoints,100,100,100,PASS
+09_Convergence_Data::Stability Tests,09_Convergence_Data.xlsx,Stability Tests,198,198,198,PASS
+09_Convergence_Data::Final Status,09_Convergence_Data.xlsx,Final Status,2,2,2,PASS
+09_Convergence_Data::Data Dictionary,09_Convergence_Data.xlsx,Data Dictionary,55,55,55,PASS
+10_Sensitivity_Ready_Data::Sensitivity Overview,10_Sensitivity_Ready_Data.xlsx,Sensitivity Overview,4,4,4,PASS
+10_Sensitivity_Ready_Data::Parameter Register,10_Sensitivity_Ready_Data.xlsx,Parameter Register,146,146,146,PASS
+10_Sensitivity_Ready_Data::Baseline Metrics,10_Sensitivity_Ready_Data.xlsx,Baseline Metrics,6,6,6,PASS
+10_Sensitivity_Ready_Data::PERT Sensitivity Matrix,10_Sensitivity_Ready_Data.xlsx,PERT Sensitivity Matrix,50000,50000,50000,PASS
+10_Sensitivity_Ready_Data::GERT Sensitivity Matrix,10_Sensitivity_Ready_Data.xlsx,GERT Sensitivity Matrix,50000,50000,50000,PASS
+10_Sensitivity_Ready_Data::Outcome Sensitivity Matrix,10_Sensitivity_Ready_Data.xlsx,Outcome Sensitivity Matrix,50000,50000,50000,PASS
+10_Sensitivity_Ready_Data::Tail Sensitivity Matrix,10_Sensitivity_Ready_Data.xlsx,Tail Sensitivity Matrix,50000,50000,50000,PASS
+10_Sensitivity_Ready_Data::Scenario Design Template,10_Sensitivity_Ready_Data.xlsx,Scenario Design Template,1,1,1,PASS
+10_Sensitivity_Ready_Data::Common Random Numbers,10_Sensitivity_Ready_Data.xlsx,Common Random Numbers,20,20,20,PASS
+10_Sensitivity_Ready_Data::Probability Constraints,10_Sensitivity_Ready_Data.xlsx,Probability Constraints,7,7,7,PASS
+10_Sensitivity_Ready_Data::Duration Constraints,10_Sensitivity_Ready_Data.xlsx,Duration Constraints,35,35,35,PASS
+10_Sensitivity_Ready_Data::Loop Cap Alternatives,10_Sensitivity_Ready_Data.xlsx,Loop Cap Alternatives,10,10,10,PASS
+10_Sensitivity_Ready_Data::Analysis Method Register,10_Sensitivity_Ready_Data.xlsx,Analysis Method Register,8,8,8,PASS
+10_Sensitivity_Ready_Data::Data Dictionary,10_Sensitivity_Ready_Data.xlsx,Data Dictionary,284,284,284,PASS
+Data_Dictionary::Data Dictionary,Data_Dictionary.xlsx,Data Dictionary,1482,1482,1482,PASS
+11_Validation_and_Reconciliation::Input Validation,11_Validation_and_Reconciliation.xlsx,Input Validation,20,20,20,PASS
+11_Validation_and_Reconciliation::PERT Reconciliation,11_Validation_and_Reconciliation.xlsx,PERT Reconciliation,50000,50000,50000,PASS
+11_Validation_and_Reconciliation::GERT Reconciliation,11_Validation_and_Reconciliation.xlsx,GERT Reconciliation,50000,50000,50000,PASS
+11_Validation_and_Reconciliation::Probability Validation,11_Validation_and_Reconciliation.xlsx,Probability Validation,7,7,7,PASS
+11_Validation_and_Reconciliation::Loop Validation,11_Validation_and_Reconciliation.xlsx,Loop Validation,10,10,10,PASS
+11_Validation_and_Reconciliation::Cap Validation,11_Validation_and_Reconciliation.xlsx,Cap Validation,10,10,10,PASS
+11_Validation_and_Reconciliation::Path Continuity,11_Validation_and_Reconciliation.xlsx,Path Continuity,50000,50000,50000,PASS
+11_Validation_and_Reconciliation::Duration Reconciliation,11_Validation_and_Reconciliation.xlsx,Duration Reconciliation,100000,100000,100000,PASS
+11_Validation_and_Reconciliation::Exact Verification Status,11_Validation_and_Reconciliation.xlsx,Exact Verification Status,3,3,3,PASS
+11_Validation_and_Reconciliation::Reproducibility Comparison,11_Validation_and_Reconciliation.xlsx,Reproducibility Comparison,100000,100000,100000,PASS
+11_Validation_and_Reconciliation::Row Count Reconciliation,11_Validation_and_Reconciliation.xlsx,Row Count Reconciliation,7,7,7,PASS
+11_Validation_and_Reconciliation::Cross-File Reconciliation,11_Validation_and_Reconciliation.xlsx,Cross-File Reconciliation,12,12,12,PASS
+11_Validation_and_Reconciliation::Workbook Integrity,11_Validation_and_Reconciliation.xlsx,Workbook Integrity,12,12,12,PASS
+11_Validation_and_Reconciliation::Data Dictionary,11_Validation_and_Reconciliation.xlsx,Data Dictionary,82,82,82,PASS

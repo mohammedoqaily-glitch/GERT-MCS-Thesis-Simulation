@@ -1,0 +1,62 @@
+# Git and Codex metadata
+.git/
+.codex/
+.agents/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Rebuildable dependency directories
+node_modules/
+
+# Temporary and operating-system files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+.DS_Store
+Thumbs.db
+
+# Temporary verification and local analysis caches
+/appendix_verification/
+/work/sensitivity_cache/
+/work/mplconfig_section_4_7/
+/work/section_4_7_smoke/
+
+# Exact duplicate project mirrors
+/work/section_4_7_authoritative/
+/outputs/Simulation_Data/
+/outputs/New folder/
+
+# Duplicate release convenience directories and archives
+/release/VO_PERT_GERT_Full_Simulation_Package/09_ALL_CSV/
+/release/VO_PERT_GERT_Full_Simulation_Package/10_ALL_PARQUET/
+/release/VO_PERT_GERT_Full_Simulation_Package.zip
+/04_7_FINAL_FIGURES.zip
+/outputs/Sensitivity_Analysis.zip
+/outputs/Sensitivity_Analysis/*.inspect.ndjson
+/outputs/Prepared_Simulation_Results*
+
+# Rebuildable export and packaging binaries
+/work/package_release/*.dll
+/work/package_release/*.exe
+/work/raw_data_export/parquet_tool/*.dll
+/work/raw_data_export/parquet_tool/*.exe
+
+# Reviewed large, raw, checkpoint, and superseded artifacts
+/work/raw_data_export/fresh_simulation.sqlite
+/work/raw_data_export/fresh_run_checkpoint.pkl
+/work/preliminary_run/simulation_data.json
+/work/final_preliminary/final_simulation_data.pkl
+/outputs/Raw_Data/
+/outputs/Final_Preliminary_*
+/outputs/Preliminary_Experimental_*

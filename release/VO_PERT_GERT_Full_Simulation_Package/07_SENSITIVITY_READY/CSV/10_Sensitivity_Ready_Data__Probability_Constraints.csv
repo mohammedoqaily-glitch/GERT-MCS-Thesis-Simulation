@@ -1,0 +1,8 @@
+Probability_Group,Arc_Tags,Baseline_Sum,Constraint,Approval_Status
+S1,e12;e1T,1,"Outgoing probabilities must remain in [0,1] and sum to 1",Requires model-owner approval
+S2,e23;e24;e22;e21;e2T,1,"Outgoing probabilities must remain in [0,1] and sum to 1",Requires model-owner approval
+S3,e34;e33;e32;e3T;e3D,1,"Outgoing probabilities must remain in [0,1] and sum to 1",Requires model-owner approval
+S4,e45;e46;e43;e42;e4D,1,"Outgoing probabilities must remain in [0,1] and sum to 1",Requires model-owner approval
+S5,e56;e57;e55;e54;e52;e5D,1,"Outgoing probabilities must remain in [0,1] and sum to 1",Requires model-owner approval
+S6,e67;e66;e6D,1,"Outgoing probabilities must remain in [0,1] and sum to 1",Requires model-owner approval
+SD,eD3;eD7;eDT,1,"Outgoing probabilities must remain in [0,1] and sum to 1",Requires model-owner approval

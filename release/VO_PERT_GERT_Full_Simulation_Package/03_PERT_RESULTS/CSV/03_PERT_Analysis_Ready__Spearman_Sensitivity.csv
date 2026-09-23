@@ -1,0 +1,7 @@
+Activity_ID,Spearman_Rho,P_Value,Rank,Sample_Size,Interpretation
+e12,0.15262902759767252,2.8305960529452961e-259,4,50000,Large-sample Fisher z approximation; association is not causal
+e23,0.16126241597334734,1.0263936810540773e-289,3,50000,Large-sample Fisher z approximation; association is not causal
+e34,0.29261379029602158,0,2,50000,Large-sample Fisher z approximation; association is not causal
+e45,0.90053415129796444,0,1,50000,Large-sample Fisher z approximation; association is not causal
+e56,0.1335481772606702,2.8762535124432539e-198,6,50000,Large-sample Fisher z approximation; association is not causal
+e67,0.14853129955267,1.8958320409546963e-245,5,50000,Large-sample Fisher z approximation; association is not causal

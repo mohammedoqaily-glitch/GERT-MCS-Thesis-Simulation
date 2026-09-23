@@ -1,0 +1,11 @@
+{
+  "model": "VO PERT-MCS and GERT-MCS",
+  "pert_iterations": 50000,
+  "gert_iterations": 50000,
+  "root_seed": 42,
+  "beta_pert_lambda": 4.0,
+  "rounding_rule": "ceil at activity and traversal level",
+  "pert_input_sha256": "7984b5b2e29928345772f0110ea1fa1c9ceb4121dc2e3aed4737112a98bc1f58",
+  "gert_input_sha256": "dc34b00fcd3988146da0760ac18499eeca9d8596601c09445ca5d956c4ae6387",
+  "program_version": "raw-data-export-1.0.0"
+}

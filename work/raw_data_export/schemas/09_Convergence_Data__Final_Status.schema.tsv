@@ -1,0 +1,4 @@
+Model	string
+Checkpoint_Interval	int64
+Final_Five_Pass	bool
+Convergence_Status	string

@@ -1,0 +1,6 @@
+Iteration_ID	int64
+Sequence	int64
+Activity_ID	string
+Beta_Y	double
+Alpha	double
+Beta	double

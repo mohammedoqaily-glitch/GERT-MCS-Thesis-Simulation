@@ -1,0 +1,4 @@
+System,Method,Iterations,Residual_Norm,Status
+Successful absorption,BiCGSTAB,17,7.0822706957423204e-11,PASS
+State occupancy flow,GMRES,26,7.6923217395000026e-12,PASS
+Dispute hitting probability,GMRES,18,1.0787107079981811e-09,PASS

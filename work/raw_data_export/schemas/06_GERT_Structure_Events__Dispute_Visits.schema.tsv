@@ -1,0 +1,8 @@
+Iteration_ID	int64
+Dispute_Visit_Number	int64
+Arrival_Step	int64
+Departure_Step	int64
+Previous_Node	string
+Next_Node	string
+Outcome	string
+Total_Rounded_Duration	int64

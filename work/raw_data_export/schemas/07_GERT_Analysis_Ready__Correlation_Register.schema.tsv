@@ -1,0 +1,7 @@
+Feature	string
+Target	string
+Method	string
+Coefficient	double
+P_Value	double
+Sample_Size	int64
+Notes	string

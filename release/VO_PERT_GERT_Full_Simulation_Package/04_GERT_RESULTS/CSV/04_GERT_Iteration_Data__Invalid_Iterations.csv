@@ -1,0 +1,2 @@
+Status,Count,Denominator,Explanation
+No invalid iterations,0,50000,All iterations ended at S7 or ST and reconciled

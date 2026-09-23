@@ -1,0 +1,12 @@
+Activity_ID	string
+Activity_Name	string
+O	double
+ML	double
+P	double
+Alpha	double
+Beta	double
+Exact_Rounded_Mean	double
+Simulated_Mean	double
+Simulated_SD	double
+Minimum	int64
+Maximum	int64

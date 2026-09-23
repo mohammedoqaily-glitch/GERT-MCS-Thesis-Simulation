@@ -1,0 +1,2 @@
+VO PERT-GERT Monte Carlo Simulator corrected gate package
+Executable status: not built; PyInstaller/PySide6 unavailable in this environment.

@@ -1,0 +1,4 @@
+Tail,Tail_N,Threshold_Working_Days,Dominant direct single-pass success,Exact fixed PERT route,Successful self-loop-bearing,Successful feedback-loop-bearing,Successful dispute-bearing
+P90,2952,125,1.05013550136,0.474254742547,9.21409214092,55.7588075881,33.5027100271
+P95,1464,149,0,0,0,55.5327868852,44.4672131148
+P99,307,213,0,0,0,18.8925081433,81.1074918567

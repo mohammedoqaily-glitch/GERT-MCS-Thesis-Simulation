@@ -1,0 +1,7 @@
+Loop_ID	string
+Arc_Tag	string
+From_Node	string
+To_Node	string
+Loop_Cap	int64
+Rule	string
+Valid	bool

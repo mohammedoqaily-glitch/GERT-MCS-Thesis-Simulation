@@ -1,0 +1,3 @@
+Outcome	string
+Percentile	int64
+Nearest_Rank_Value	int64

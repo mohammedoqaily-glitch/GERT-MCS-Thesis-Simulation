@@ -1,0 +1,15 @@
+Iteration_ID	int64
+e12_Raw	double
+e23_Raw	double
+e34_Raw	double
+e45_Raw	double
+e56_Raw	double
+e67_Raw	double
+e12_Rounded	int64
+e23_Rounded	int64
+e34_Rounded	int64
+e45_Rounded	int64
+e56_Rounded	int64
+e67_Rounded	int64
+Total_Raw_Duration	double
+Total_Rounded_Duration	int64

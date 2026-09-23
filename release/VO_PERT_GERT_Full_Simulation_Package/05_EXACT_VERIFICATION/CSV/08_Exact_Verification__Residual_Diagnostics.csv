@@ -1,0 +1,4 @@
+System,Residual_Norm,Tolerance_Interpretation,Pass_Fail
+Successful absorption,7.0822706957423204e-11,Residual below configured iterative-solver tolerance,PASS
+State occupancy flow,7.6923217395000026e-12,Residual below configured iterative-solver tolerance,PASS
+Dispute hitting probability,1.0787107079981811e-09,Residual below configured iterative-solver tolerance,PASS

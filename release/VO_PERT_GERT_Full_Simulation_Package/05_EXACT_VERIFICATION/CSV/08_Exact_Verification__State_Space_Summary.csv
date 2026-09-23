@@ -1,0 +1,8 @@
+Metric,Value,Interpretation
+Reachable transient states,390031,Current node plus ten independent counters
+Q nonzero entries,1073854,Sparse transient-to-transient entries
+Spectral radius,0.4386253551298952,Required < 1
+Total absorption probability,0.9999999997009128,Required approximately 1
+Successful reachable,1,S7 has positive absorption probability
+Terminated reachable,1,ST has positive absorption probability
+Verification status,PASS,All mandatory exact checks

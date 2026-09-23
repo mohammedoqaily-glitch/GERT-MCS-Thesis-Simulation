@@ -1,0 +1,5 @@
+Model	string
+Iteration_ID	int64
+Run_1_Hash	string
+Run_2_Hash	string
+Exact_Match	bool

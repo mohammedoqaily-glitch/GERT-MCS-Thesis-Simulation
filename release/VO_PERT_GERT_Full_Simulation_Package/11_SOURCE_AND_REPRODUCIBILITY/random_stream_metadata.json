@@ -1,0 +1,20 @@
+{
+  "generator": "NumPy default_rng (PCG64)",
+  "root_seed": 42,
+  "seed_sequence_spawn_count": 3,
+  "streams": [
+    {
+      "spawn_index": 0,
+      "purpose": "PERT beta sampling"
+    },
+    {
+      "spawn_index": 1,
+      "purpose": "GERT routing"
+    },
+    {
+      "spawn_index": 2,
+      "purpose": "GERT duration sampling"
+    }
+  ],
+  "reproducibility_status": "PASS"
+}

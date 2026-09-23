@@ -1,0 +1,13 @@
+Iteration_ID	int64
+Step_Number	int64
+Loop_ID	string
+Arc_Tag	string
+From_Node	string
+To_Node	string
+Count_Before	int64
+Count_After	int64
+Loop_Cap	int64
+Raw_Duration	double
+Rounded_Duration	int64
+Cap_Reached	bool
+Outcome	string

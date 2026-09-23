@@ -1,0 +1,11 @@
+Series,Percentile,Lifecycle_Time_Working_Days,N
+No dispute,50,108,27797
+No dispute,80,116,27797
+No dispute,90,121,27797
+No dispute,95,130,27797
+No dispute,99,192,27797
+Dispute-bearing,50,170,1074
+Dispute-bearing,80,215,1074
+Dispute-bearing,90,226,1074
+Dispute-bearing,95,239,1074
+Dispute-bearing,99,308,1074

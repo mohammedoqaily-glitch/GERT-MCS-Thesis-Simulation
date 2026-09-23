@@ -1,0 +1,5 @@
+Loop_ID	string
+Iterations_Reaching_Cap	int64
+Recorded_Cap_Events	int64
+Difference	int64
+Status	string

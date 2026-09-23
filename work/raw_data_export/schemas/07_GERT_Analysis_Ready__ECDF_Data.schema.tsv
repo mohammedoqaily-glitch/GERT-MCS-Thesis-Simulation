@@ -1,0 +1,5 @@
+Outcome	string
+Duration	int64
+Frequency	int64
+Cumulative_Frequency	int64
+ECDF	double

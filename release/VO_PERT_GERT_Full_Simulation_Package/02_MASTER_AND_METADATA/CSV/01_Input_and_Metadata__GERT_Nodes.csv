@@ -1,0 +1,11 @@
+Node_ID,Node_Name,Input_Logic,Output_Logic,Role,Word_Row
+S0,Start VO Trigger,,XOR,Start,4
+S1,Identification,XOR,XOR,Transient,6
+S2,Evaluation / Proposal,XOR,XOR,Transient,11
+S3,Approval / Instruction,XOR,XOR,Transient,16
+S4,Implementation (Control Point),XOR,XOR,Transient,21
+S5,Inspection / Verification,XOR,XOR,Transient,27
+S6,Valuation & Adjustment (Consolidation),XOR,XOR,Transient,30
+SD,Dispute Resolution,XOR,XOR,Dispute Transient,33
+S7,Final Closeout,XOR,,Successful Terminal,34
+ST,Withdrawn / Rejected,XOR,,Terminated Terminal,35

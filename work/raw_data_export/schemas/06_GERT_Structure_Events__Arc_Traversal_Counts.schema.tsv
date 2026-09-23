@@ -1,0 +1,5 @@
+Arc_Tag	string
+Total_Traversals	int64
+Activation_Probability	double
+Mean_Traversals	double
+Maximum_Traversals	int64

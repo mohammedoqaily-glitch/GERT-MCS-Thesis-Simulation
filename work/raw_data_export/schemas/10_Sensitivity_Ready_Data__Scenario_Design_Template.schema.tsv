@@ -1,0 +1,13 @@
+Scenario_ID	string
+Parameter_ID	string
+Parameter_Type	string
+Entity_ID	string
+Baseline_Value	double
+Proposed_Value	double
+Relative_Change	double
+Perturbation_Method	string
+Probability_Group	string
+Renormalisation_Method	string
+Seed_Set_ID	string
+Approved	bool
+Notes	string

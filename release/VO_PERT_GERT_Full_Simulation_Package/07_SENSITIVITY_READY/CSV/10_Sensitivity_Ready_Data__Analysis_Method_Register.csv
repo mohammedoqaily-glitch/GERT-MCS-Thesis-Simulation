@@ -1,0 +1,9 @@
+Method,Data_Requirements,Appropriate_Use,Limitations
+Spearman rank correlation,Iteration-level varying inputs and outcome,Baseline driver analysis,Association is not causal
+Standardised regression coefficients,Full-rank numeric predictor matrix,Baseline driver analysis,Check collinearity and residual assumptions
+PRCC,Parameter-varying scenarios plus control variables,After scenario generation,Fixed baseline parameters cannot yield PRCC
+Logistic regression,Binary successful outcome and predictor matrix,Baseline classification analysis,Use regularisation for sparse features
+Morris screening,Designed parameter trajectories,Future parameter scenarios,Requires approved parameter ranges
+One-at-a-time scenario analysis,Approved baseline perturbations,Future parameter scenarios,Maintain probability-group constraints
+Sobol analysis,Independent parameter sampling design,Future parameter scenarios,Requires approved distributions and many runs
+Common-random-number comparison,Matched seed schedule across scenarios,Future scenario comparison,Use the supplied deterministic seed sets

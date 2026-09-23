@@ -1,0 +1,4 @@
+Stream_Name,Entropy,Spawn_Key,Pool_Size,Generator
+PERT_Duration,42,[0],4,NumPy SeedSequence child stream
+GERT_Routing,42,[1],4,NumPy SeedSequence child stream
+GERT_Duration,42,[2],4,NumPy SeedSequence child stream

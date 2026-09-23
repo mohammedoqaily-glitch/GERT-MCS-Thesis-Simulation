@@ -1,0 +1,3 @@
+Loop_ID	string
+Exact_Activation_Probability	double
+Simulated_Activation_Probability	double

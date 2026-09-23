@@ -1,0 +1,3 @@
+Passed: 3
+Failed: 0
+Skipped/Blocked: full simulation tests blocked by incomplete authoritative Word input.

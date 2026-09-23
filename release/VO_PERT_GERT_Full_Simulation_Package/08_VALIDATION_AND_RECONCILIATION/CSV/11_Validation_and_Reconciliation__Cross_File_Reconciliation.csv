@@ -1,0 +1,13 @@
+Check,Status,Evidence
+PERT wide/long totals,PASS,Six long rows reconcile to every wide total
+GERT traversal/transition totals,PASS,226832 rows
+GERT node-visit totals,PASS,276832 rows
+GERT loop events,PASS,6082 rows
+GERT cap events,PASS,147 rows
+GERT renormalisation events,PASS,138 rows
+Dispute logs,PASS,1188 visits
+Path frequency,PASS,50000 iterations
+Outcome count,PASS,28871 + 21129 = 50000
+PERT sensitivity rows,PASS,50000
+GERT sensitivity rows,PASS,50000
+Iteration IDs,PASS,No missing or duplicated IDs

@@ -1,0 +1,49 @@
+﻿Parameter_ID,Parameter_Type,Network_Location,Node,Baseline_Value,Low_Value,High_Value,Selection_Rule
+e12,Routing Probability,S1 -> S2,S1,0.6,0.44999999999999996,0.75,+/-25% relative; proportional renormalisation within XOR group
+e1T,Routing Probability,S1 -> ST,S1,0.4,0.30000000000000004,0.5,+/-25% relative; proportional renormalisation within XOR group
+e23,Routing Probability,S2 -> S3,S2,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e24,Routing Probability,S2 -> S4,S2,0.9,0.675,0.99,+/-25% relative; proportional renormalisation within XOR group
+e22,Routing Probability,S2 -> S2,S2,0.04,0.03,0.05,+/-25% relative; proportional renormalisation within XOR group
+e21,Routing Probability,S2 -> S1,S2,0.04,0.03,0.05,+/-25% relative; proportional renormalisation within XOR group
+e2T,Routing Probability,S2 -> ST,S2,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e34,Routing Probability,S3 -> S4,S3,0.9,0.675,0.99,+/-25% relative; proportional renormalisation within XOR group
+e33,Routing Probability,S3 -> S3,S3,0.04,0.03,0.05,+/-25% relative; proportional renormalisation within XOR group
+e32,Routing Probability,S3 -> S2,S3,0.04,0.03,0.05,+/-25% relative; proportional renormalisation within XOR group
+e3T,Routing Probability,S3 -> ST,S3,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e3D,Routing Probability,S3 -> SD,S3,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e45,Routing Probability,S4 -> S5,S4,0.9,0.675,0.99,+/-25% relative; proportional renormalisation within XOR group
+e46,Routing Probability,S4 -> S6,S4,0.05,0.037500000000000006,0.0625,+/-25% relative; proportional renormalisation within XOR group
+e43,Routing Probability,S4 -> S3,S4,0.02,0.015,0.025,+/-25% relative; proportional renormalisation within XOR group
+e42,Routing Probability,S4 -> S2,S4,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e4D,Routing Probability,S4 -> SD,S4,0.02,0.015,0.025,+/-25% relative; proportional renormalisation within XOR group
+e56,Routing Probability,S5 -> S6,S5,0.9,0.675,0.99,+/-25% relative; proportional renormalisation within XOR group
+e57,Routing Probability,S5 -> S7,S5,0.05,0.037500000000000006,0.0625,+/-25% relative; proportional renormalisation within XOR group
+e55,Routing Probability,S5 -> S5,S5,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e54,Routing Probability,S5 -> S4,S5,0.02,0.015,0.025,+/-25% relative; proportional renormalisation within XOR group
+e52,Routing Probability,S5 -> S2,S5,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e5D,Routing Probability,S5 -> SD,S5,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+e67,Routing Probability,S6 -> S7,S6,0.95,0.7124999999999999,0.99,+/-25% relative; proportional renormalisation within XOR group
+e66,Routing Probability,S6 -> S6,S6,0.04,0.03,0.05,+/-25% relative; proportional renormalisation within XOR group
+e6D,Routing Probability,S6 -> SD,S6,0.01,0.0075,0.0125,+/-25% relative; proportional renormalisation within XOR group
+eD3,Routing Probability,SD -> S3,SD,0.9,0.675,0.99,+/-25% relative; proportional renormalisation within XOR group
+eD7,Routing Probability,SD -> S7,SD,0.05,0.037500000000000006,0.0625,+/-25% relative; proportional renormalisation within XOR group
+eDT,Routing Probability,SD -> ST,SD,0.05,0.037500000000000006,0.0625,+/-25% relative; proportional renormalisation within XOR group
+e45,Duration Triplet,S4 -> S5,,"[50.0, 60.0, 80.0]","[45.0, 54.0, 72.0]","[55.00000000000001, 66.0, 88.0]",Top-five expected successful-duration contribution screen; coherent +/-10% scaling
+e24,Duration Triplet,S2 -> S4,,"[12.0, 15.0, 17.0]","[10.8, 13.5, 15.3]","[13.200000000000001, 16.5, 18.700000000000003]",Top-five expected successful-duration contribution screen; coherent +/-10% scaling
+e56,Duration Triplet,S5 -> S6,,"[10.0, 12.0, 14.0]","[9.0, 10.8, 12.6]","[11.0, 13.200000000000001, 15.400000000000002]",Top-five expected successful-duration contribution screen; coherent +/-10% scaling
+e67,Duration Triplet,S6 -> S7,,"[7.0, 10.0, 12.0]","[6.3, 9.0, 10.8]","[7.700000000000001, 11.0, 13.200000000000001]",Top-five expected successful-duration contribution screen; coherent +/-10% scaling
+e12,Duration Triplet,S1 -> S2,,"[5.0, 7.0, 10.0]","[4.5, 6.3, 9.0]","[5.5, 7.700000000000001, 11.0]",Top-five expected successful-duration contribution screen; coherent +/-10% scaling
+e22,Loop Cap,S2 -> S2,,2,1,3,"cap = 1, baseline, baseline + 1"
+e21,Loop Cap,S2 -> S1,,2,1,3,"cap = 1, baseline, baseline + 1"
+e33,Loop Cap,S3 -> S3,,2,1,3,"cap = 1, baseline, baseline + 1"
+e32,Loop Cap,S3 -> S2,,2,1,3,"cap = 1, baseline, baseline + 1"
+e43,Loop Cap,S4 -> S3,,2,1,3,"cap = 1, baseline, baseline + 1"
+e42,Loop Cap,S4 -> S2,,2,1,3,"cap = 1, baseline, baseline + 1"
+e55,Loop Cap,S5 -> S5,,2,1,3,"cap = 1, baseline, baseline + 1"
+e54,Loop Cap,S5 -> S4,,2,1,3,"cap = 1, baseline, baseline + 1"
+e52,Loop Cap,S5 -> S2,,2,1,3,"cap = 1, baseline, baseline + 1"
+e66,Loop Cap,S6 -> S6,,2,1,3,"cap = 1, baseline, baseline + 1"
+duration_distribution,Distribution Family,All duration-bearing transitions,,beta_pert,beta_pert,triangular,Reference versus triangular robustness
+root_seed,Monte Carlo Robustness,Random streams,,42,101,1010,Ten documented fixed seeds
+replications,Convergence,Simulation run,,50000,1000,50000,Nested prefixes of baseline stream
+e1T,Threshold Grid,S1 -> ST,,0.4,0.0,0.5,Dedicated 0.05-step early-exit grid

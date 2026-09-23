@@ -1,0 +1,7 @@
+File_Name	string
+Size_Bytes	int64
+SHA256	string
+ZIP_Integrity	string
+Openpyxl_Open_Test	string
+Excel_COM_Open_Test	string
+Validation_Status	string

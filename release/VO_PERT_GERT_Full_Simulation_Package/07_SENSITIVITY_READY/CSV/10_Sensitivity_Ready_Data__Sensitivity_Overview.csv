@@ -1,0 +1,5 @@
+Topic,Statement
+Dataset status,Analysis-ready baseline Monte Carlo records
+Supported now,"Descriptive, correlation, regression, classification, path-driver, and tail-driver analysis"
+Requires future scenarios,"Fixed-parameter sensitivity for probabilities, O/ML/P values, and Loop Caps"
+Required statement,"Baseline iteration-level variability can support driver analysis, but sensitivity to fixed model parameters such as probabilities, O/ML/P bounds, and Loop Caps requires additional parameter-variation scenarios."

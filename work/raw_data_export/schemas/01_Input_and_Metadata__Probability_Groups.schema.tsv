@@ -1,0 +1,7 @@
+From_Node	string
+Arc_Count	string
+Original_Probability_Sum	double
+Required_Sum	double
+Difference	double
+Valid	bool
+Arc_Tags	string

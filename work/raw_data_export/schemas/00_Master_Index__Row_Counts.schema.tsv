@@ -1,0 +1,7 @@
+Dataset	string
+Workbook	string
+Worksheet	string
+Excel_Rows	int64
+CSV_Rows	int64
+Parquet_Rows	int64
+Status	string

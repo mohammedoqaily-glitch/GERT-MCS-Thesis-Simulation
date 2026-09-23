@@ -1,0 +1,6 @@
+From_Node	string
+Arc_Count	int64
+Probability_Sum	double
+Tolerance	double
+Difference	double
+Status	string

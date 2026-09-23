@@ -1,0 +1,7 @@
+Metric,Value,Unit
+PERT mean,115.17843999999999,days
+PERT P90,124,days
+GERT successful probability,0.57742000000000004,probability
+GERT successful mean,112.49160056804406,days
+GERT terminated mean,4.3792418003691607,days
+GERT Dispute probability,0.022679999999999999,probability

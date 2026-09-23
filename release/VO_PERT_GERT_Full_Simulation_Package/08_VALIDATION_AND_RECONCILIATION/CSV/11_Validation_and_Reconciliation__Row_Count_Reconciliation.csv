@@ -1,0 +1,8 @@
+Dataset,Expected_Rows,Observed_Rows,Difference,Status
+PERT iteration rows,50000,50000,0,PASS
+PERT long rows,300000,300000,0,PASS
+GERT iteration rows,50000,50000,0,PASS
+GERT traversal rows,226832,226832,0,PASS
+GERT node visits,276832,276832,0,PASS
+Path frequencies,50000,50000,0,PASS
+Successful plus Terminated,50000,50000,0,PASS

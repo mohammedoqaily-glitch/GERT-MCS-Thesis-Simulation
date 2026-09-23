@@ -1,0 +1,14 @@
+Iteration_ID	int64
+Sequence	int64
+Activity_ID	string
+Activity_Name	string
+O	double
+ML	double
+P	double
+Alpha	double
+Beta	double
+Beta_Y	double
+Raw_Duration	double
+Rounded_Duration	int64
+Total_Duration	int64
+Contribution_Share	double

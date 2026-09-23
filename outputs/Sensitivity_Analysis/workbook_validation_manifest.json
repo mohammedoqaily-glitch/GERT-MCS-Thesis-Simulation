@@ -1,0 +1,40 @@
+{
+  "generated_utc": "2026-07-30T21:31:43.899Z",
+  "main_workbook": "C:\\Users\\moham\\Documents\\Codex\\2026-07-28\\build\\outputs\\Sensitivity_Analysis\\Sensitivity_and_Robustness_Results.xlsx",
+  "main_sheet_count": 20,
+  "main_sheets": [
+    "README",
+    "Baseline_Config",
+    "Baseline_Validation",
+    "Sensitivity_Parameters",
+    "Routing_OAT",
+    "Duration_OAT",
+    "LoopCap_Robustness",
+    "Distribution_Robustness",
+    "Seed_Robustness",
+    "Replication_Convergence",
+    "Threshold_Analysis",
+    "CI_Summary",
+    "Tornado_P90_Data",
+    "Tornado_Outcome_Data",
+    "Integrated_Ranking",
+    "Scenario_Run_Log",
+    "Validation_Checks",
+    "Errors_Warnings",
+    "Duration_Driver_Screen",
+    "Figures"
+  ],
+  "thesis_workbook": "C:\\Users\\moham\\Documents\\Codex\\2026-07-28\\build\\outputs\\Sensitivity_Analysis\\Thesis_Ready_Tables.xlsx",
+  "thesis_sheet_count": 7,
+  "thesis_sheets": [
+    "Table_4X_Parameters",
+    "Table_4Y_Routing_OAT",
+    "Table_4Z_Duration_OAT",
+    "Table_4W_Robustness",
+    "Table_4V_Threshold",
+    "Table_4U_Seed_Conv",
+    "Table_4T_Ranking"
+  ],
+  "main_formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "thesis_formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

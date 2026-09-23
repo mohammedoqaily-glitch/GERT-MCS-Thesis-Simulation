@@ -1,0 +1,7 @@
+Iteration_ID	int64
+Step_Number	int64
+Loop_ID	string
+Arc_Tag	string
+Loop_Cap	int64
+Count_When_Reached	int64
+Outcome	string

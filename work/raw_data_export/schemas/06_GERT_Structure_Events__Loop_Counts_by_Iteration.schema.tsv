@@ -1,0 +1,13 @@
+Iteration_ID	int64
+e22_Count	int64
+e21_Count	int64
+e33_Count	int64
+e32_Count	int64
+e43_Count	int64
+e42_Count	int64
+e55_Count	int64
+e54_Count	int64
+e52_Count	int64
+e66_Count	int64
+Any_Loop	bool
+Any_Cap_Reached	bool

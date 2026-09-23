@@ -1,0 +1,16 @@
+Entity_ID	string
+N	int64
+Mean	double
+Variance	double
+SD	double
+CV	double
+Minimum	int64
+Maximum	int64
+P25	int64
+P50	int64
+P75	int64
+IQR	int64
+P80	int64
+P90	int64
+P95	int64
+P99	int64

@@ -1,0 +1,5 @@
+Outcome	string
+Count	int64
+Probability	double
+Mean_Duration	double
+SD_Duration	double

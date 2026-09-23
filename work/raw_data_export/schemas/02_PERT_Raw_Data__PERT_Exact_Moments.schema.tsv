@@ -1,0 +1,7 @@
+Entity_Type	string
+Entity_ID	string
+Exact_Mean	double
+Exact_Variance	double
+Exact_SD	double
+Minimum	int64
+Maximum	int64

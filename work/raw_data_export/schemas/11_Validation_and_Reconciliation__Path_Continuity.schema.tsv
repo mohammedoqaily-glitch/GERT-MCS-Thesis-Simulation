@@ -1,0 +1,8 @@
+Iteration_ID	int64
+First_Node	string
+First_Arc	string
+Final_Node	string
+Arc_Count	int64
+Node_Count	int64
+Difference	int64
+Status	string

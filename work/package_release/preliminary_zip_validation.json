@@ -1,0 +1,134 @@
+{
+  "label": "preliminary",
+  "status": "PASS",
+  "validated_utc": "2026-07-30T00:54:47+00:00",
+  "zip_path": "C:\\Users\\moham\\Documents\\Codex\\2026-07-28\\build\\release\\VO_PERT_GERT_Full_Simulation_Package.zip",
+  "zip_size_bytes": 368886606,
+  "zip_sha256": "3e76d947beb5eb3a397851605cfc308a3f9e9caf95c3b6e3d340cab63a07c3eb",
+  "total_packaged_files": 544,
+  "total_package_folders": 30,
+  "excel_workbooks": 16,
+  "unique_csv_datasets": 127,
+  "unique_parquet_datasets": 127,
+  "csv_dataset_file_copies": 254,
+  "parquet_dataset_file_copies": 254,
+  "total_raw_data_file_copies": 508,
+  "source_files": 3,
+  "total_uncompressed_size": 661587194,
+  "corrupt_zip_members": 0,
+  "missing_required_files": 0,
+  "hash_mismatches_after_extraction": 0,
+  "excel_open_failures_after_extraction": 0,
+  "csv_read_failures": 0,
+  "parquet_read_failures": 0,
+  "checks": [
+    {
+      "Category": "ZIP",
+      "Check": "ZIP exists, nonzero, and is valid format",
+      "Observed": 368886606,
+      "Expected": ">0 and zipfile=True",
+      "Status": "PASS"
+    },
+    {
+      "Category": "ZIP",
+      "Check": "ZipFile.testzip",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "ZIP",
+      "Check": "Staged/ZIP member path parity",
+      "Observed": "missing=0 unexpected=0",
+      "Expected": "0/0",
+      "Status": "PASS"
+    },
+    {
+      "Category": "ZIP",
+      "Check": "Uncompressed size parity",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "ZIP",
+      "Check": "CRC parity",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Extracted hashes match checksums manifest",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Required file names present",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "All extracted Excel workbooks open",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Extracted CSV sample read",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Extracted Parquet sample read",
+      "Observed": 0,
+      "Expected": 0,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Physical CSV dataset copies",
+      "Observed": 254,
+      "Expected": 254,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Physical Parquet dataset copies",
+      "Observed": 254,
+      "Expected": 254,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Unique CSV datasets",
+      "Observed": 127,
+      "Expected": 127,
+      "Status": "PASS"
+    },
+    {
+      "Category": "Extraction",
+      "Check": "Unique Parquet datasets",
+      "Observed": 127,
+      "Expected": 127,
+      "Status": "PASS"
+    }
+  ],
+  "details": {
+    "corrupt_members": [],
+    "missing_members": [],
+    "size_mismatches": [],
+    "crc_mismatches": [],
+    "hash_mismatches": [],
+    "excel_failures": [],
+    "csv_failures": [],
+    "parquet_failures": []
+  }
+}

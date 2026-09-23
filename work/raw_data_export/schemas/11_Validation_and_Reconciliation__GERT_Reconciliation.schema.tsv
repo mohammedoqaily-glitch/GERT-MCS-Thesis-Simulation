@@ -1,0 +1,7 @@
+Iteration_ID	int64
+Final_Node	string
+Outcome	string
+Transition_Count	int64
+Rounded_Total	int64
+Failure_Reason	string
+Status	string

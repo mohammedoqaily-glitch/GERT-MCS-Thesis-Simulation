@@ -1,0 +1,13 @@
+Iteration_ID	int64
+Event_Number	int64
+Step_Number	int64
+Current_Node	string
+Capped_Arcs	string
+Loop_Counters	string
+Original_Probabilities	string
+Eligibility	string
+Effective_Probabilities	string
+Remaining_Original_Probability_Sum	double
+Effective_Probability_Sum	double
+Selected_Arc	string
+Outcome	string

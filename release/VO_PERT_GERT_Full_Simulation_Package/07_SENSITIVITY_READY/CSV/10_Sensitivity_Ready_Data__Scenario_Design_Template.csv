@@ -1,0 +1,2 @@
+Scenario_ID,Parameter_ID,Parameter_Type,Entity_ID,Baseline_Value,Proposed_Value,Relative_Change,Perturbation_Method,Probability_Group,Renormalisation_Method,Seed_Set_ID,Approved,Notes
+TEMPLATE,,,,,,,,,,,0,No perturbation ranges approved; model-owner approval required

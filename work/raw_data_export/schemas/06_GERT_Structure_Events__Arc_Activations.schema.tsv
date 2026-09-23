@@ -1,0 +1,8 @@
+Iteration_ID	int64
+Arc_Tag	string
+Activated	bool
+First_Step	int64
+Traversal_Count	int64
+Accumulated_Raw_Duration	double
+Accumulated_Rounded_Duration	int64
+Outcome	string

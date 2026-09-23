@@ -1,0 +1,6 @@
+Model	string
+Iteration_ID	int64
+Component_Sum	int64
+Recorded_Total	int64
+Difference	int64
+Status	string

@@ -1,0 +1,64 @@
+{
+  "generated_utc": "2026-07-30T00:51:07+00:00",
+  "program_version": "raw-data-export-1.0.0",
+  "runtime": {
+    "python": "3.12.13",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "python_packages": {
+    "numpy": "2.3.5",
+    "openpyxl": "3.1.5",
+    "XlsxWriter": "3.2.9",
+    "python-docx": "1.2.0"
+  },
+  "parquet_writer": {
+    "implementation": "ParquetSharp",
+    "compression": "Snappy",
+    "row_group_size": 10000,
+    "runtime_files": [
+      {
+        "name": "ParquetSharp.dll",
+        "sha256": "eb36adbe7c29b5cbf49c285098c6a8c6523dce8b8ca672ca6d1489cebb28b2c3",
+        "size_bytes": 216096
+      },
+      {
+        "name": "ParquetSharpNative.dll",
+        "sha256": "62b422895b1c10852cc5d197e6001d34be258e95cea290f328662b29af90200c",
+        "size_bytes": 14242336
+      },
+      {
+        "name": "System.Memory.dll",
+        "sha256": "4d42232b0b45a76ab68f1dea293348322d926915d496f1c3a8f6af0e3082c1d4",
+        "size_bytes": 142368
+      },
+      {
+        "name": "System.Runtime.CompilerServices.Unsafe.dll",
+        "sha256": "66409f670315afe8610f17a4d3a1ee52d72b6a46c544cec97544e8385f90ad74",
+        "size_bytes": 16768
+      },
+      {
+        "name": "System.ValueTuple.dll",
+        "sha256": "e4774aead2793f440e0ced6c097048423d118e0b6ed238c6fe5b456acb07817f",
+        "size_bytes": 78992
+      }
+    ]
+  },
+  "source_files": [
+    {
+      "name": "simulate_final.py",
+      "sha256": "8bc526bb1052089aaa75f2bd97713f8adb2b29077e5f06cab2a6f167bc7a8940",
+      "size_bytes": 50540
+    },
+    {
+      "name": "export_raw_data.py",
+      "sha256": "dd3598fc124c80f2c3cc210b58901ea73e61905044767a1991a42d3029eb3bf6",
+      "size_bytes": 150177
+    },
+    {
+      "name": "ParquetCsvConverter.cs",
+      "sha256": "28a5346da3a88e17f0b1907f86c07b8625b707ad58e55c4b589fd1510cf0e260",
+      "size_bytes": 7535
+    }
+  ]
+}

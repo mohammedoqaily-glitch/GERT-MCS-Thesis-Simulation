@@ -1,0 +1,4 @@
+Status	string
+Count	int64
+Denominator	int64
+Explanation	string

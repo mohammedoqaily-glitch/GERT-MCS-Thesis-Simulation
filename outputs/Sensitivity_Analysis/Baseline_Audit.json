@@ -1,0 +1,144 @@
+{
+  "analysis_version": "1.0.0",
+  "generated_utc": "2026-07-30T21:31:54+00:00",
+  "baseline_entry_point": "C:\\Users\\moham\\Documents\\Codex\\2026-07-28\\build\\work\\final_preliminary\\simulate_final.py",
+  "authoritative_pert_input": "C:\\Users\\moham\\Documents\\Codex\\2026-07-28\\build\\release\\VO_PERT_GERT_Full_Simulation_Package\\01_AUTHORITATIVE_INPUTS\\PERT Input.docx",
+  "authoritative_gert_input": "C:\\Users\\moham\\Documents\\Codex\\2026-07-28\\build\\release\\VO_PERT_GERT_Full_Simulation_Package\\01_AUTHORITATIVE_INPUTS\\GERT nput.docx",
+  "pert_sha256": "7984b5b2e29928345772f0110ea1fa1c9ceb4121dc2e3aed4737112a98bc1f58",
+  "gert_sha256": "dc34b00fcd3988146da0760ac18499eeca9d8596601c09445ca5d956c4ae6387",
+  "node_count": 10,
+  "transition_count_including_structural_e01": 30,
+  "xor_routing_groups": {
+    "S1": [
+      "e12",
+      "e1T"
+    ],
+    "S2": [
+      "e23",
+      "e24",
+      "e22",
+      "e21",
+      "e2T"
+    ],
+    "S3": [
+      "e34",
+      "e33",
+      "e32",
+      "e3T",
+      "e3D"
+    ],
+    "S4": [
+      "e45",
+      "e46",
+      "e43",
+      "e42",
+      "e4D"
+    ],
+    "S5": [
+      "e56",
+      "e57",
+      "e55",
+      "e54",
+      "e52",
+      "e5D"
+    ],
+    "S6": [
+      "e67",
+      "e66",
+      "e6D"
+    ],
+    "SD": [
+      "eD3",
+      "eD7",
+      "eDT"
+    ]
+  },
+  "loop_transitions": [
+    {
+      "arc_tag": "e22",
+      "from": "S2",
+      "to": "S2",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e21",
+      "from": "S2",
+      "to": "S1",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e33",
+      "from": "S3",
+      "to": "S3",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e32",
+      "from": "S3",
+      "to": "S2",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e43",
+      "from": "S4",
+      "to": "S3",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e42",
+      "from": "S4",
+      "to": "S2",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e55",
+      "from": "S5",
+      "to": "S5",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e54",
+      "from": "S5",
+      "to": "S4",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e52",
+      "from": "S5",
+      "to": "S2",
+      "cap": 2
+    },
+    {
+      "arc_tag": "e66",
+      "from": "S6",
+      "to": "S6",
+      "cap": 2
+    }
+  ],
+  "terminal_outcomes": {
+    "S7": "Successful Closure",
+    "ST": "Non-Implementation Closure"
+  },
+  "duration_distribution": "Beta-PERT (lambda 4)",
+  "rounding": "ceil once per sampled transition/activity",
+  "default_replications": 50000,
+  "baseline_seed": 42,
+  "outcome_separation": {
+    "successful": true,
+    "nonimplementation": true,
+    "dispute_diversion": true,
+    "computational_termination": true
+  },
+  "available_granularities": [
+    "run",
+    "transition",
+    "route",
+    "node",
+    "loop",
+    "cap",
+    "renormalisation",
+    "dispute",
+    "convergence",
+    "outcome"
+  ]
+}

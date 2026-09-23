@@ -1,0 +1,181 @@
+{
+  "simulation_name": "VO PERT-GERT Monte Carlo Simulator",
+  "variation_order_id": "DEFAULT",
+  "variation_order_name": "No attached case data",
+  "scenario_name": "Default",
+  "model_type": "Both",
+  "iterations": null,
+  "seed": 42,
+  "notes": "Fallback demonstration network. Replace with supplied Word/spec/case data before research use.",
+  "pert": [
+    {
+      "id": "P01",
+      "name": "Submission review",
+      "o": 2,
+      "ml": 4,
+      "p": 7,
+      "enabled": true,
+      "structural_zero": false
+    },
+    {
+      "id": "P02",
+      "name": "Technical assessment",
+      "o": 3,
+      "ml": 5,
+      "p": 9,
+      "enabled": true,
+      "structural_zero": false
+    },
+    {
+      "id": "P03",
+      "name": "Commercial assessment",
+      "o": 2,
+      "ml": 6,
+      "p": 12,
+      "enabled": true,
+      "structural_zero": false
+    },
+    {
+      "id": "P04",
+      "name": "Approval and close",
+      "o": 1,
+      "ml": 3,
+      "p": 5,
+      "enabled": true,
+      "structural_zero": false
+    }
+  ],
+  "nodes": [
+    {
+      "id": "START",
+      "name": "Start",
+      "logic": "XOR",
+      "terminal": ""
+    },
+    {
+      "id": "ASSESS",
+      "name": "Assess",
+      "logic": "XOR",
+      "terminal": ""
+    },
+    {
+      "id": "DISPUTE",
+      "name": "Dispute",
+      "logic": "XOR",
+      "terminal": ""
+    },
+    {
+      "id": "SUCCESS",
+      "name": "Successful",
+      "logic": "XOR",
+      "terminal": "Successful"
+    },
+    {
+      "id": "TERM",
+      "name": "Terminated",
+      "logic": "XOR",
+      "terminal": "Terminated"
+    }
+  ],
+  "arcs": [
+    {
+      "id": "G01",
+      "name": "Initial assessment",
+      "o": 2,
+      "ml": 4,
+      "p": 7,
+      "enabled": true,
+      "structural_zero": false,
+      "from_node": "START",
+      "to_node": "ASSESS",
+      "probability": 1,
+      "loop_id": "",
+      "loop_cap": null
+    },
+    {
+      "id": "G02",
+      "name": "Accept",
+      "o": 1,
+      "ml": 3,
+      "p": 5,
+      "enabled": true,
+      "structural_zero": false,
+      "from_node": "ASSESS",
+      "to_node": "SUCCESS",
+      "probability": 0.55,
+      "loop_id": "",
+      "loop_cap": null
+    },
+    {
+      "id": "G03",
+      "name": "Reject",
+      "o": 1,
+      "ml": 2,
+      "p": 4,
+      "enabled": true,
+      "structural_zero": false,
+      "from_node": "ASSESS",
+      "to_node": "TERM",
+      "probability": 0.25,
+      "loop_id": "",
+      "loop_cap": null
+    },
+    {
+      "id": "G04",
+      "name": "Dispute referral",
+      "o": 2,
+      "ml": 5,
+      "p": 10,
+      "enabled": true,
+      "structural_zero": false,
+      "from_node": "ASSESS",
+      "to_node": "DISPUTE",
+      "probability": 0.2,
+      "loop_id": "",
+      "loop_cap": null
+    },
+    {
+      "id": "G05",
+      "name": "Dispute resolves",
+      "o": 2,
+      "ml": 4,
+      "p": 8,
+      "enabled": true,
+      "structural_zero": false,
+      "from_node": "DISPUTE",
+      "to_node": "SUCCESS",
+      "probability": 0.65,
+      "loop_id": "",
+      "loop_cap": null
+    },
+    {
+      "id": "G06",
+      "name": "Dispute fails",
+      "o": 1,
+      "ml": 3,
+      "p": 6,
+      "enabled": true,
+      "structural_zero": false,
+      "from_node": "DISPUTE",
+      "to_node": "TERM",
+      "probability": 0.25,
+      "loop_id": "",
+      "loop_cap": null
+    },
+    {
+      "id": "G07",
+      "name": "Loop to assessment",
+      "o": 0,
+      "ml": 0,
+      "p": 0,
+      "enabled": true,
+      "structural_zero": true,
+      "from_node": "DISPUTE",
+      "to_node": "ASSESS",
+      "probability": 0.1,
+      "loop_id": "L01",
+      "loop_cap": 2
+    }
+  ],
+  "start_node": "START"
+}

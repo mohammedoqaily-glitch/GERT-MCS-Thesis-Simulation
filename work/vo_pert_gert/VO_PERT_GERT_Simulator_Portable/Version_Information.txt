@@ -1,0 +1,2 @@
+VO PERT-GERT Monte Carlo Simulator source package 0.1.0
+Executable build status: not built in this environment; PyInstaller unavailable.

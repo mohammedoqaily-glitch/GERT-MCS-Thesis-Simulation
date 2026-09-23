@@ -1,0 +1,19 @@
+Field,Value
+Result_Status,PRELIMINARY EXPERIMENTAL SIMULATION RESULTS
+Program_Version,raw-data-export-1.0.0
+Iterations,50000
+Root_Seed,42
+Time_Unit,days
+Beta_PERT_Lambda,4
+PERT_Run_ID,PERT-42-50000-01
+GERT_Run_ID,GERT-42-50000-01
+Start_Time_UTC,2026-07-29T21:27:24+00:00
+Simulation_Completion_UTC,2026-07-29T21:54:03+00:00
+PERT_Input_File,PERT Input.docx
+PERT_SHA256,7984b5b2e29928345772f0110ea1fa1c9ceb4121dc2e3aed4737112a98bc1f58
+GERT_Input_File,GERT nput.docx
+GERT_SHA256,dc34b00fcd3988146da0760ac18499eeca9d8596601c09445ca5d956c4ae6387
+PERT_Reproducibility,PASS
+GERT_Reproducibility,PASS
+Exact_Verification,PASS
+Monte_Carlo_Acceptance,PASS

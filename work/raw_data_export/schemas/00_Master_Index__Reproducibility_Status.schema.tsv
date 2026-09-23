@@ -1,0 +1,4 @@
+Model	string
+Iterations_Compared	int64
+Iteration_Level_Exact_Match	bool
+Status	string

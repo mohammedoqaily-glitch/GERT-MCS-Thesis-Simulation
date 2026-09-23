@@ -1,0 +1,5 @@
+Stream_Name	string
+Entropy	int64
+Spawn_Key	string
+Pool_Size	int64
+Generator	string

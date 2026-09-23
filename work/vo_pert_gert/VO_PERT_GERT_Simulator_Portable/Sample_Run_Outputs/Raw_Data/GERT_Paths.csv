@@ -1,0 +1,1001 @@
+Path,Outcome,Duration
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,18
+G01 > G04 > G07 > G04 > G05,Successful,18
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,5
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G02,Successful,5
+G01 > G03,Terminated,6
+G01 > G02,Successful,6
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,18
+G01 > G03,Terminated,7
+G01 > G03,Terminated,9
+G01 > G03,Terminated,9
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G04 > G07 > G02,Successful,17
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G04 > G07 > G02,Successful,16
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,14
+G01 > G03,Terminated,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,14
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,8
+G01 > G03,Terminated,8
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G02,Successful,12
+G01 > G02,Successful,9
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,19
+G01 > G02,Successful,11
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,5
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G04 > G06,Terminated,13
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G04 > G06,Terminated,13
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,11
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,16
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,15
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,6
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,15
+G01 > G04 > G06,Terminated,13
+G01 > G02,Successful,9
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,20
+G01 > G03,Terminated,5
+G01 > G02,Successful,6
+G01 > G02,Successful,9
+G01 > G03,Terminated,9
+G01 > G02,Successful,10
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G04 > G06,Terminated,17
+G01 > G03,Terminated,5
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G03,Terminated,9
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,10
+G01 > G02,Successful,6
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,16
+G01 > G04 > G05,Successful,12
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,6
+G01 > G04 > G06,Terminated,16
+G01 > G02,Successful,11
+G01 > G03,Terminated,5
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G04 > G07 > G02,Successful,13
+G01 > G02,Successful,7
+G01 > G02,Successful,10
+G01 > G04 > G07 > G02,Successful,12
+G01 > G02,Successful,8
+G01 > G02,Successful,10
+G01 > G03,Terminated,7
+G01 > G02,Successful,6
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,12
+G01 > G02,Successful,9
+G01 > G03,Terminated,5
+G01 > G02,Successful,8
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,13
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,13
+G01 > G04 > G05,Successful,18
+G01 > G02,Successful,10
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,10
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,19
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,15
+G01 > G03,Terminated,7
+G01 > G03,Terminated,8
+G01 > G04 > G07 > G04 > G05,Successful,22
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,10
+G01 > G02,Successful,6
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,6
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,10
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,9
+G01 > G04 > G07 > G03,Terminated,11
+G01 > G03,Terminated,7
+G01 > G02,Successful,6
+G01 > G02,Successful,10
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,13
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,8
+G01 > G04 > G07 > G02,Successful,15
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,10
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,15
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G02,Successful,10
+G01 > G02,Successful,6
+G01 > G02,Successful,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G03,Terminated,6
+G01 > G02,Successful,10
+G01 > G04 > G06,Terminated,14
+G01 > G04 > G07 > G04 > G05,Successful,18
+G01 > G02,Successful,8
+G01 > G03,Terminated,9
+G01 > G02,Successful,10
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,10
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,13
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,6
+G01 > G03,Terminated,5
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G04 > G06,Terminated,11
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,19
+G01 > G03,Terminated,8
+G01 > G02,Successful,10
+G01 > G02,Successful,6
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,6
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,11
+G01 > G03,Terminated,6
+G01 > G02,Successful,11
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G03,Terminated,9
+G01 > G03,Terminated,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,10
+G01 > G03,Terminated,10
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G02,Successful,10
+G01 > G02,Successful,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G02,Successful,10
+G01 > G02,Successful,7
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,5
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G03,Terminated,9
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,15
+G01 > G04 > G05,Successful,11
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,13
+G01 > G03,Terminated,10
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,17
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,5
+G01 > G02,Successful,8
+G01 > G03,Terminated,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,5
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,8
+G01 > G03,Terminated,8
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,10
+G01 > G03,Terminated,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G04 > G06,Terminated,11
+G01 > G04 > G06,Terminated,13
+G01 > G03,Terminated,8
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,15
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G04 > G06,Terminated,13
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,12
+G01 > G02,Successful,7
+G01 > G03,Terminated,9
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G03,Terminated,9
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,19
+G01 > G02,Successful,7
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G04 > G06,Terminated,12
+G01 > G03,Terminated,6
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,23
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,17
+G01 > G04 > G06,Terminated,13
+G01 > G02,Successful,5
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,9
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G04 > G07 > G04 > G07 > G03,Terminated,15
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G02,Successful,10
+G01 > G02,Successful,7
+G01 > G03,Terminated,6
+G01 > G03,Terminated,6
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G03,Terminated,8
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,10
+G01 > G02,Successful,10
+G01 > G04 > G06,Terminated,11
+G01 > G04 > G06,Terminated,12
+G01 > G03,Terminated,6
+G01 > G02,Successful,10
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G02,Successful,11
+G01 > G02,Successful,11
+G01 > G04 > G05,Successful,15
+G01 > G02,Successful,6
+G01 > G03,Terminated,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,6
+G01 > G02,Successful,11
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,11
+G01 > G03,Terminated,6
+G01 > G03,Terminated,9
+G01 > G03,Terminated,8
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G03,Terminated,7
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,6
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,7
+G01 > G03,Terminated,5
+G01 > G03,Terminated,7
+G01 > G02,Successful,11
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G04 > G07 > G03,Terminated,12
+G01 > G03,Terminated,6
+G01 > G03,Terminated,10
+G01 > G04 > G07 > G02,Successful,12
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,8
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G03,Terminated,8
+G01 > G04 > G06,Terminated,11
+G01 > G02,Successful,6
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,8
+G01 > G02,Successful,10
+G01 > G03,Terminated,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,11
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,9
+G01 > G04 > G07 > G03,Terminated,11
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,6
+G01 > G04 > G05,Successful,15
+G01 > G02,Successful,6
+G01 > G02,Successful,6
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,11
+G01 > G02,Successful,7
+G01 > G02,Successful,11
+G01 > G03,Terminated,7
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,5
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,8
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G04 > G06,Terminated,10
+G01 > G03,Terminated,8
+G01 > G03,Terminated,5
+G01 > G02,Successful,8
+G01 > G02,Successful,5
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,15
+G01 > G02,Successful,10
+G01 > G02,Successful,10
+G01 > G04 > G06,Terminated,19
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G04 > G06,Terminated,13
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,20
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G04 > G07 > G02,Successful,17
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,11
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,6
+G01 > G03,Terminated,8
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G02,Successful,10
+G01 > G02,Successful,10
+G01 > G03,Terminated,9
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,20
+G01 > G03,Terminated,6
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,6
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,10
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G03,Terminated,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,20
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,16
+G01 > G04 > G05,Successful,15
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,5
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,6
+G01 > G02,Successful,7
+G01 > G03,Terminated,9
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,11
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,10
+G01 > G02,Successful,7
+G01 > G03,Terminated,7
+G01 > G04 > G06,Terminated,14
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,19
+G01 > G04 > G05,Successful,15
+G01 > G03,Terminated,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,11
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,7
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,6
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G04 > G07 > G02,Successful,14
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,8
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,17
+G01 > G02,Successful,10
+G01 > G03,Terminated,9
+G01 > G03,Terminated,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,14
+G01 > G03,Terminated,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,13
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G03,Terminated,7
+G01 > G02,Successful,11
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,16
+G01 > G02,Successful,7
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,10
+G01 > G04 > G05,Successful,12
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,10
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,6
+G01 > G03,Terminated,10
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,17
+G01 > G04 > G05,Successful,15
+G01 > G04 > G05,Successful,13
+G01 > G03,Terminated,8
+G01 > G02,Successful,10
+G01 > G03,Terminated,8
+G01 > G02,Successful,6
+G01 > G04 > G06,Terminated,13
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,11
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G03,Terminated,8
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G03,Terminated,8
+G01 > G02,Successful,5
+G01 > G02,Successful,7
+G01 > G02,Successful,10
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,6
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,11
+G01 > G04 > G07 > G04 > G05,Successful,21
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G02,Successful,9
+G01 > G04 > G06,Terminated,14
+G01 > G02,Successful,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G04 > G07 > G03,Terminated,14
+G01 > G03,Terminated,8
+G01 > G03,Terminated,8
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G03,Terminated,10
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,19
+G01 > G03,Terminated,9
+G01 > G03,Terminated,6
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,15
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,15
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,14
+G01 > G03,Terminated,6
+G01 > G02,Successful,6
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,12
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,8
+G01 > G03,Terminated,8
+G01 > G03,Terminated,7
+G01 > G02,Successful,6
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,9
+G01 > G02,Successful,10
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G04 > G06,Terminated,11
+G01 > G04 > G06,Terminated,14
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,17
+G01 > G03,Terminated,9
+G01 > G04 > G06,Terminated,15
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G02,Successful,11
+G01 > G04 > G06,Terminated,16
+G01 > G03,Terminated,6
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G03,Terminated,5
+G01 > G03,Terminated,8
+G01 > G02,Successful,6
+G01 > G02,Successful,8
+G01 > G03,Terminated,8
+G01 > G03,Terminated,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,6
+G01 > G03,Terminated,6
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,9
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,12
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,7
+G01 > G02,Successful,9
+G01 > G04 > G07 > G03,Terminated,12
+G01 > G04 > G05,Successful,13
+G01 > G02,Successful,8
+G01 > G03,Terminated,8
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,8
+G01 > G03,Terminated,6
+G01 > G02,Successful,9
+G01 > G02,Successful,6
+G01 > G03,Terminated,7
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,9
+G01 > G04 > G07 > G04 > G05,Successful,24
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,18
+G01 > G03,Terminated,6
+G01 > G02,Successful,9
+G01 > G03,Terminated,9
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,7
+G01 > G02,Successful,6
+G01 > G03,Terminated,6
+G01 > G03,Terminated,7
+G01 > G02,Successful,10
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,11
+G01 > G03,Terminated,8
+G01 > G02,Successful,5
+G01 > G02,Successful,8
+G01 > G04 > G06,Terminated,14
+G01 > G02,Successful,10
+G01 > G02,Successful,8
+G01 > G02,Successful,5
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,8
+G01 > G02,Successful,9
+G01 > G03,Terminated,7
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,10
+G01 > G02,Successful,7
+G01 > G04 > G05,Successful,18
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,9
+G01 > G03,Terminated,6
+G01 > G04 > G07 > G02,Successful,18
+G01 > G04 > G06,Terminated,12
+G01 > G04 > G05,Successful,11
+G01 > G02,Successful,9
+G01 > G04 > G05,Successful,16
+G01 > G03,Terminated,9
+G01 > G04 > G05,Successful,11
+G01 > G03,Terminated,7
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G03,Terminated,9
+G01 > G02,Successful,7
+G01 > G02,Successful,8
+G01 > G02,Successful,9
+G01 > G02,Successful,8
+G01 > G02,Successful,8
+G01 > G04 > G05,Successful,18
+G01 > G03,Terminated,8
+G01 > G04 > G05,Successful,14
+G01 > G02,Successful,7
+G01 > G03,Terminated,7
+G01 > G03,Terminated,8
+G01 > G04 > G06,Terminated,14
+G01 > G04 > G06,Terminated,11
+G01 > G02,Successful,7
+G01 > G03,Terminated,8
+G01 > G02,Successful,6
+G01 > G03,Terminated,8
+G01 > G02,Successful,10
+G01 > G04 > G05,Successful,16
+G01 > G02,Successful,8

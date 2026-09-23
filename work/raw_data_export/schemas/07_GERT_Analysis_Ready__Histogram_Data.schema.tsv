@@ -1,0 +1,4 @@
+Outcome	string
+Duration	int64
+Frequency	int64
+Relative_Frequency	double

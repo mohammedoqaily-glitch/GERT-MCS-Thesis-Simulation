@@ -1,0 +1,8 @@
+From_Node,Arc_Count,Original_Probability_Sum,Required_Sum,Difference,Valid,Arc_Tags
+S1,2,1,1,0,1,e12;e1T
+S2,5,1,1,0,1,e23;e24;e22;e21;e2T
+S3,5,1,1,0,1,e34;e33;e32;e3T;e3D
+S4,5,1,1,0,1,e45;e46;e43;e42;e4D
+S5,6,1,1,0,1,e56;e57;e55;e54;e52;e5D
+S6,3,1,1,0,1,e67;e66;e6D
+SD,3,1,1,0,1,eD3;eD7;eDT

@@ -1,0 +1,11 @@
+Arc_Tag	string
+From_Node	string
+To_Node	string
+Original_Probability	double
+Loop_Cap	int64
+O	double
+ML	double
+P	double
+Alpha	double
+Beta	double
+Structural	bool

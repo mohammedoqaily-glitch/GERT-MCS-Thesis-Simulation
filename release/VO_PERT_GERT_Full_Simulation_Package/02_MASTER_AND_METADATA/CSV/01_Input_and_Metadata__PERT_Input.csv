@@ -1,0 +1,7 @@
+Sequence,Activity_ID,Activity_Name,Predecessor,Successor,O,ML,P,Alpha,Beta
+1,e12,Identification,Start VO Trigger,Evaluation / Proposal,5,7,10,2.6000000000000001,3.3999999999999999
+2,e23,Evaluation / Proposal,Identification,Approval / Instruction,5,7,10,2.6000000000000001,3.3999999999999999
+3,e34,Approval / Instruction,Evaluation / Proposal,Implementation,10,14,20,2.6000000000000001,3.3999999999999999
+4,e45,Implementation (Control Point),Approval / Instruction,Inspection / Verification,50,60,80,2.333333333333333,3.6666666666666665
+5,e56,Inspection / Verification,Implementation,Valuation & Adjustment,10,12,14,3,3
+6,e67,Valuation & Adjustment (Consolidation),Inspection / Verification,Final Closeout,7,10,12,3.3999999999999999,2.6000000000000001

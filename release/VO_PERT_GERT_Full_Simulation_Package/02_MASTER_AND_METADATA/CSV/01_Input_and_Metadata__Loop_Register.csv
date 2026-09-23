@@ -1,0 +1,11 @@
+Loop_ID,Arc_Tag,From_Node,To_Node,Loop_Cap,Rule,Valid
+e22,e22,S2,S2,2,Independent capped return arc,1
+e21,e21,S2,S1,2,Independent capped return arc,1
+e33,e33,S3,S3,2,Independent capped return arc,1
+e32,e32,S3,S2,2,Independent capped return arc,1
+e43,e43,S4,S3,2,Independent capped return arc,1
+e42,e42,S4,S2,2,Independent capped return arc,1
+e55,e55,S5,S5,2,Independent capped return arc,1
+e54,e54,S5,S4,2,Independent capped return arc,1
+e52,e52,S5,S2,2,Independent capped return arc,1
+e66,e66,S6,S6,2,Independent capped return arc,1

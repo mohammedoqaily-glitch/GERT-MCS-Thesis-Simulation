@@ -1,0 +1,15 @@
+Parameter_ID	string
+Model	string
+Entity_Type	string
+Entity_ID	string
+Parameter_Name	string
+Baseline_Value	double
+Data_Type	string
+Unit	string
+Allowed_Minimum	double
+Allowed_Maximum	double
+Constraint_Group	string
+Constraint_Rule	string
+Sensitivity_Eligible	bool
+Sensitivity_Method	string
+Notes	string

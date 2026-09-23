@@ -1,0 +1,10 @@
+Metric	string
+Exact_Value	double
+Simulated_Value	double
+Difference	double
+Sample_Size	int64
+Standard_Error	double
+Acceptance_Lower	double
+Acceptance_Upper	double
+Acceptance_Method	string
+Pass_Fail	string

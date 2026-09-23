@@ -1,0 +1,15 @@
+﻿Metric,Existing_Accepted_Value,Reproduced_Value,Absolute_Difference,Tolerance,Unit,Status
+PERT mean completion time,115.17844,115.17844,0.0,0.1,working days,PASS
+GERT successful-closure count,28871,28871,0.0,0,runs,PASS
+GERT non-implementation count,21129,21129,0.0,0,runs,PASS
+P(Successful Closure),0.57742,0.57742,0.0,0.001,probability,PASS
+P(Non-Implementation Closure),0.42258,0.42258,0.0,0.001,probability,PASS
+P(Dispute Diversion),0.02268,0.02268,0.0,0.001,probability,PASS
+Unconditional mixed-outcome mean,66.80548,66.80548,0.0,0.1,working days,PASS
+Mean Successful-Closure Time,112.49160056804406,112.49160056804406,0.0,0.1,working days,PASS
+Successful-Closure median,109.0,109.0,0.0,1,working days,PASS
+Successful-Closure P80,117.0,117.0,0.0,1,working days,PASS
+Successful-Closure P90,125.0,125.0,0.0,1,working days,PASS
+Successful-Closure P95,149.0,149.0,0.0,1,working days,PASS
+Maximum route-frequency difference,0.0,0.0,0.0,0.002,probability,PASS
+Computational termination rate,0.0,0.0,0.0,0.0,probability,PASS

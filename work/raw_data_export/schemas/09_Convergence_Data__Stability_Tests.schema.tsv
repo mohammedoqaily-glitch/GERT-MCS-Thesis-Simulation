@@ -1,0 +1,5 @@
+Model	string
+Checkpoint_N	int64
+Maximum_Duration_Relative_Change	double
+Maximum_Probability_Absolute_Change	double
+Pass	bool

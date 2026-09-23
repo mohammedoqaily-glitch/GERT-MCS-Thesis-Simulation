@@ -1,0 +1,7 @@
+﻿Severity,Code,Message
+WARNING,NO_EXPERT_RANGES,No expert probability or duration intervals were present; documented fallback ranges were used.
+WARNING,TC_UNDEFINED,No completion threshold Tc was defined; exceedance probabilities are blank rather than invented.
+LIMITATION,CRN_ROUTE_DIVERGENCE,"Scenario streams share deterministic starts, but route divergence changes subsequent random-draw alignment."
+LIMITATION,GMM_DIAGNOSTIC,Gaussian mixtures are diagnostic approximations to a discrete mixed-outcome distribution.
+INTERPRETATION,NO_CAUSALITY,Baseline correlation and screening measures are not causal effects.
+SOURCE_LOCATION,VERIFIED_PACKAGE_COPY,Desktop input copies were unavailable; byte-identical verified package copies were used.

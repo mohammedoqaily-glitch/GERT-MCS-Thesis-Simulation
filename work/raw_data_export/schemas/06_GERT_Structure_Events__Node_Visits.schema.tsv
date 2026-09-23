@@ -1,0 +1,10 @@
+Iteration_ID	int64
+Visit_Number	int64
+Node_ID	string
+Node_Name	string
+Arrival_Step	int64
+Departure_Step	int64
+Is_Start	bool
+Is_Dispute	bool
+Is_Terminal	bool
+Outcome	string

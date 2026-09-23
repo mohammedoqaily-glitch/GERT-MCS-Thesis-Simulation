@@ -1,0 +1,9 @@
+﻿Category,Check,Observed,Expected,Status
+Baseline,All baseline reproduction checks pass,14,14,PASS
+Inputs,PERT input hash unchanged,7984b5b2e29928345772f0110ea1fa1c9ceb4121dc2e3aed4737112a98bc1f58,7984b5b2e29928345772f0110ea1fa1c9ceb4121dc2e3aed4737112a98bc1f58,PASS
+Inputs,GERT input hash unchanged,dc34b00fcd3988146da0760ac18499eeca9d8596601c09445ca5d956c4ae6387,dc34b00fcd3988146da0760ac18499eeca9d8596601c09445ca5d956c4ae6387,PASS
+Scenarios,Unique executed scenario IDs,111,111,PASS
+Scenarios,All executed scenarios pass,111,111,PASS
+Outcomes,Computational termination absent,0,0,PASS
+Uncertainty,Bootstrap resamples,1000,>=1000,PASS
+Threshold,All threshold scenarios classified,11,11,PASS

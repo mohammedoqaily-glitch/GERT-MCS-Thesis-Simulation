@@ -1,0 +1,21 @@
+Seed_Set_ID,Root_Seed,PERT_Stream_ID,GERT_Routing_Stream_ID,GERT_Duration_Stream_ID,Intended_Use
+CRN-01,2684470948,"[0, 0]","[0, 1]","[0, 2]",Future matched-scenario comparison using common random numbers
+CRN-02,4091952314,"[1, 0]","[1, 1]","[1, 2]",Future matched-scenario comparison using common random numbers
+CRN-03,233227757,"[2, 0]","[2, 1]","[2, 2]",Future matched-scenario comparison using common random numbers
+CRN-04,3276785861,"[3, 0]","[3, 1]","[3, 2]",Future matched-scenario comparison using common random numbers
+CRN-05,3644269654,"[4, 0]","[4, 1]","[4, 2]",Future matched-scenario comparison using common random numbers
+CRN-06,1206282609,"[5, 0]","[5, 1]","[5, 2]",Future matched-scenario comparison using common random numbers
+CRN-07,3543069911,"[6, 0]","[6, 1]","[6, 2]",Future matched-scenario comparison using common random numbers
+CRN-08,3479688010,"[7, 0]","[7, 1]","[7, 2]",Future matched-scenario comparison using common random numbers
+CRN-09,877132087,"[8, 0]","[8, 1]","[8, 2]",Future matched-scenario comparison using common random numbers
+CRN-10,1244265337,"[9, 0]","[9, 1]","[9, 2]",Future matched-scenario comparison using common random numbers
+CRN-11,2740186692,"[10, 0]","[10, 1]","[10, 2]",Future matched-scenario comparison using common random numbers
+CRN-12,3884972972,"[11, 0]","[11, 1]","[11, 2]",Future matched-scenario comparison using common random numbers
+CRN-13,829139639,"[12, 0]","[12, 1]","[12, 2]",Future matched-scenario comparison using common random numbers
+CRN-14,2545567356,"[13, 0]","[13, 1]","[13, 2]",Future matched-scenario comparison using common random numbers
+CRN-15,2718398101,"[14, 0]","[14, 1]","[14, 2]",Future matched-scenario comparison using common random numbers
+CRN-16,176092387,"[15, 0]","[15, 1]","[15, 2]",Future matched-scenario comparison using common random numbers
+CRN-17,3528048386,"[16, 0]","[16, 1]","[16, 2]",Future matched-scenario comparison using common random numbers
+CRN-18,569531098,"[17, 0]","[17, 1]","[17, 2]",Future matched-scenario comparison using common random numbers
+CRN-19,1337295874,"[18, 0]","[18, 1]","[18, 2]",Future matched-scenario comparison using common random numbers
+CRN-20,612016888,"[19, 0]","[19, 1]","[19, 2]",Future matched-scenario comparison using common random numbers

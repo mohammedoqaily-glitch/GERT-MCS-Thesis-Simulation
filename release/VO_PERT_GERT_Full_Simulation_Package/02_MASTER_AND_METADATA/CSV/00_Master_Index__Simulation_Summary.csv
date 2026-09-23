@@ -1,0 +1,11 @@
+Metric,Value
+PERT iterations,50000
+PERT mean,115.17843999999999
+PERT analytical rounded mean,115.16538178128799
+GERT valid iterations,50000
+GERT successful count,28871
+GERT terminated count,21129
+GERT traversal rows,226832
+GERT node visits,276832
+Exact status,PASS
+Monte Carlo acceptance,PASS

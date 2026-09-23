@@ -1,0 +1,8 @@
+Route_Category,Count,Probability_Percent
+Dominant direct single-pass success,20581,41.162
+Other successful loop-free,2467,4.934
+Exact fixed PERT route,218,0.436
+Successful self-loop-bearing,2241,4.482
+Successful feedback-loop-bearing,2290,4.58
+Successful dispute-bearing,1074,2.148
+Withdrawn/Rejected,21129,42.258

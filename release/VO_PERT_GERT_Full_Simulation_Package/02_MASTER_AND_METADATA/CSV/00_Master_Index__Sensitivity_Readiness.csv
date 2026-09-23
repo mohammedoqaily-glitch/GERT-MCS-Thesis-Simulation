@@ -1,0 +1,4 @@
+Analysis,Status,Evidence_or_Requirement
+Baseline driver analysis,READY,Complete iteration-level feature matrices
+Regression and classification,READY,"Outcomes, paths, durations, arc/node/loop features exported"
+Fixed-parameter global sensitivity,REQUIRES ADDITIONAL SCENARIOS,"Baseline iteration-level variability can support driver analysis, but sensitivity to fixed model parameters such as probabilities, O/ML/P bounds, and Loop Caps requires additional parameter-variation scenarios."

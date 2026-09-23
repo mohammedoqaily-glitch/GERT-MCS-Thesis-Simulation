@@ -1,0 +1,12 @@
+File_Name	string
+Relative_Path	string
+Description	string
+Sheet_Names	string
+Row_Count	int64
+Column_Count	int64
+File_Size	int64
+SHA256	string
+ZIP_Integrity	string
+Openpyxl_Open_Test	string
+Excel_COM_Open_Test	string
+Validation_Status	string

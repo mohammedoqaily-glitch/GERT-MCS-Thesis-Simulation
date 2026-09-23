@@ -1,0 +1,18 @@
+{
+  "required_sheets": 32,
+  "native_charts": 13,
+  "external_links": 0,
+  "dimensions": {
+    "Input Audit": "A1:R30",
+    "PERT Iterations": "A1:B50001",
+    "PERT Activity Durations": "A1:E300001",
+    "PERT Charts": "A1:A1",
+    "GERT Status": "A1:D8",
+    "GERT Input Audit": "A1:R30",
+    "GERT Outcome Summary": "A1:N129",
+    "GERT Iterations": "A1:P50001",
+    "GERT Verification": "A1:C18"
+  },
+  "tests_passed": 22,
+  "tests_failed": 0
+}
