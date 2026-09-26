@@ -1,2 +1,4 @@
 # Reproduction environment: CPython 3.12
 numpy==2.3.5
+streamlit==1.49.1
+matplotlib==3.10.6
