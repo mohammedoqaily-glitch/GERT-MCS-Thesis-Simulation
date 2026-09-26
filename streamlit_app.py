@@ -161,7 +161,10 @@ else:
         },
         key="duration_editor",
     )
-    st.session_state.custom_duration_rows = edited.to_dict("records")
+    if hasattr(edited, "to_dict"):
+        st.session_state.custom_duration_rows = edited.to_dict("records")
+    else:
+        st.session_state.custom_duration_rows = [dict(row) for row in edited]
 
     for row in st.session_state.custom_duration_rows:
         try:
