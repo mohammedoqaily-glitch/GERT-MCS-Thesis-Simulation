@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from dataclasses import replace
 
 import streamlit as st
 
@@ -61,6 +62,11 @@ st.caption(
 
 with st.sidebar:
     st.header("Simulation settings")
+    scenario_mode = st.radio(
+        "Input mode",
+        ["Thesis baseline", "Custom duration scenario"],
+        index=0,
+    )
     replications = st.number_input(
         "Replications",
         min_value=1_000,
@@ -78,68 +84,140 @@ with st.sidebar:
     run_button = st.button("Run full thesis dashboard", type="primary", use_container_width=True)
 
 st.info(
-    "This version reproduces and compares the thesis PERT–MCS and GERT–MCS analyses using the "
-    "verified baseline network and parameters. Custom VO input will be added after the thesis "
-    "reproduction dashboard is fully verified."
+    "The thesis baseline reproduces the verified model. Custom duration mode allows the complete "
+    "O/ML/P duration set to be edited while keeping routing probabilities, loop caps, network "
+    "topology, RNG logic, and rounding rules fixed."
 )
 
 
 st.subheader("Model inputs")
-st.caption(
-    "Read-only display of the complete thesis baseline inputs. Editing will be enabled only after "
-    "this viewer is confirmed stable."
-)
 
-input_tabs = st.tabs(["PERT fixed-route inputs", "GERT network inputs"])
-
-with input_tabs[0]:
-    pert_rows = [
-        {
-            "Arc": item.tag,
-            "Process stage": item.stage,
-            "From": item.predecessor,
-            "To": item.successor,
-            "O": item.optimistic,
-            "ML": item.most_likely,
-            "P": item.pessimistic,
-        }
-        for item in PERT_ACTIVITIES
-    ]
-    st.dataframe(pert_rows, width="stretch", hide_index=True)
-
-with input_tabs[1]:
-    gert_rows = [
+if "custom_duration_rows" not in st.session_state:
+    st.session_state.custom_duration_rows = [
         {
             "Arc": arc.tag,
             "From": arc.from_state,
             "To": arc.to_state,
             "Probability": arc.probability,
-            "Loop cap": "—" if arc.loop_cap is None else arc.loop_cap,
-            "O": arc.optimistic,
-            "ML": arc.most_likely,
-            "P": arc.pessimistic,
+            "Loop cap": None if arc.loop_cap is None else arc.loop_cap,
+            "O": float(arc.optimistic),
+            "ML": float(arc.most_likely),
+            "P": float(arc.pessimistic),
         }
         for arc in GERT_ARCS
     ]
-    st.dataframe(gert_rows, width="stretch", hide_index=True)
 
-    routing_totals = {}
-    for arc in GERT_ARCS:
-        routing_totals.setdefault(arc.from_state, 0.0)
-        routing_totals[arc.from_state] += arc.probability
-    st.markdown("#### XOR routing totals")
-    st.dataframe(
-        [
+duration_errors = []
+
+if scenario_mode == "Thesis baseline":
+    st.caption("Authoritative thesis inputs (read-only).")
+    input_tabs = st.tabs(["PERT fixed-route inputs", "GERT network inputs"])
+
+    with input_tabs[0]:
+        pert_rows = [
             {
-                "Branching state": state,
-                "Σp": total,
-                "Status": "PASS" if abs(total - 1.0) <= 1e-12 else "FAIL",
+                "Arc": item.tag,
+                "Process stage": item.stage,
+                "From": item.predecessor,
+                "To": item.successor,
+                "O": item.optimistic,
+                "ML": item.most_likely,
+                "P": item.pessimistic,
             }
-            for state, total in routing_totals.items()
-        ],
+            for item in PERT_ACTIVITIES
+        ]
+        st.dataframe(pert_rows, width="stretch", hide_index=True)
+
+    with input_tabs[1]:
+        gert_rows = [
+            {
+                "Arc": arc.tag,
+                "From": arc.from_state,
+                "To": arc.to_state,
+                "Probability": arc.probability,
+                "Loop cap": "—" if arc.loop_cap is None else arc.loop_cap,
+                "O": arc.optimistic,
+                "ML": arc.most_likely,
+                "P": arc.pessimistic,
+            }
+            for arc in GERT_ARCS
+        ]
+        st.dataframe(gert_rows, width="stretch", hide_index=True)
+else:
+    st.caption(
+        "Edit all GERT duration triplets below. PERT common-route durations are synchronized "
+        "automatically from the matching GERT arcs to preserve the controlled comparison."
+    )
+    edited = st.data_editor(
+        st.session_state.custom_duration_rows,
         width="stretch",
         hide_index=True,
+        num_rows="fixed",
+        disabled=["Arc", "From", "To", "Probability", "Loop cap"],
+        column_config={
+            "O": st.column_config.NumberColumn("O", min_value=0.0, step=1.0),
+            "ML": st.column_config.NumberColumn("ML", min_value=0.0, step=1.0),
+            "P": st.column_config.NumberColumn("P", min_value=0.0, step=1.0),
+        },
+        key="duration_editor",
     )
+    st.session_state.custom_duration_rows = edited.to_dict("records")
+
+    for row in st.session_state.custom_duration_rows:
+        try:
+            o, ml, p = float(row["O"]), float(row["ML"]), float(row["P"])
+            if not (0 <= o <= ml <= p):
+                duration_errors.append(
+                    f'{row["Arc"]}: require 0 ≤ O ≤ ML ≤ P; received {o:g}, {ml:g}, {p:g}.'
+                )
+        except Exception:
+            duration_errors.append(f'{row["Arc"]}: duration values must be numeric.')
+
+    if duration_errors:
+        st.error("Duration-input validation failed.")
+        for error in duration_errors:
+            st.write("• " + error)
+    else:
+        st.success("All duration triplets satisfy 0 ≤ O ≤ ML ≤ P.")
+
+    if st.button("Restore thesis duration defaults", width="stretch"):
+        st.session_state.custom_duration_rows = [
+            {
+                "Arc": arc.tag,
+                "From": arc.from_state,
+                "To": arc.to_state,
+                "Probability": arc.probability,
+                "Loop cap": None if arc.loop_cap is None else arc.loop_cap,
+                "O": float(arc.optimistic),
+                "ML": float(arc.most_likely),
+                "P": float(arc.pessimistic),
+            }
+            for arc in GERT_ARCS
+        ]
+        st.session_state.pop("duration_editor", None)
+        st.rerun()
+
+routing_totals = {}
+for arc in GERT_ARCS:
+    routing_totals.setdefault(arc.from_state, 0.0)
+    routing_totals[arc.from_state] += arc.probability
+st.markdown("#### XOR routing totals")
+st.dataframe(
+    [
+        {
+            "Branching state": state,
+            "Σp": total,
+            "Status": "PASS" if abs(total - 1.0) <= 1e-12 else "FAIL",
+        }
+        for state, total in routing_totals.items()
+    ],
+    width="stretch",
+    hide_index=True,
+)
+
+if run_button and scenario_mode == "Custom duration scenario" and duration_errors:
+    st.error("Simulation was not started because the custom duration inputs are invalid.")
+    st.stop()
 
 if not run_button:
     st.markdown(
@@ -157,7 +235,35 @@ if not run_button:
     st.stop()
 
 with st.spinner("Running PERT–MCS and GERT–MCS and preparing analytical outputs..."):
-    pert, gert, summary = run_thesis_simulation(int(replications), int(seed))
+    if scenario_mode == "Thesis baseline":
+        active_pert_activities = PERT_ACTIVITIES
+        active_gert_arcs = GERT_ARCS
+        pert, gert, summary = run_thesis_simulation(int(replications), int(seed))
+    else:
+        custom_by_tag = {row["Arc"]: row for row in st.session_state.custom_duration_rows}
+        active_gert_arcs = tuple(
+            replace(
+                arc,
+                optimistic=float(custom_by_tag[arc.tag]["O"]),
+                most_likely=float(custom_by_tag[arc.tag]["ML"]),
+                pessimistic=float(custom_by_tag[arc.tag]["P"]),
+            )
+            for arc in GERT_ARCS
+        )
+        active_arc_by_tag = {arc.tag: arc for arc in active_gert_arcs}
+        active_pert_activities = tuple(
+            replace(
+                item,
+                optimistic=active_arc_by_tag[item.tag].optimistic,
+                most_likely=active_arc_by_tag[item.tag].most_likely,
+                pessimistic=active_arc_by_tag[item.tag].pessimistic,
+            )
+            for item in PERT_ACTIVITIES
+        )
+        validate_model(active_pert_activities, active_gert_arcs)
+        pert = run_pert(active_pert_activities, replications=int(replications), seed=int(seed))
+        gert = run_gert(active_gert_arcs, replications=int(replications), seed=int(seed))
+        summary = summarise_results(pert, gert, int(seed))
 
 pert_summary = summary["pert_mcs"]
 gert_summary = summary["gert_mcs"]
@@ -217,12 +323,12 @@ with tabs[1]:
     )
     st.pyplot(ecdf_figure([("PERT–MCS", pert.totals)], "PERT–MCS Empirical Cumulative Distribution"))
     st.pyplot(convergence_figure(pert.totals, "Convergence of PERT–MCS Mean, P90, and P95"))
-    activity_labels = [item.tag for item in PERT_ACTIVITIES]
+    activity_labels = [item.tag for item in active_pert_activities]
     variance_fig, shares = pert_activity_variance_figure(pert, activity_labels)
     st.pyplot(variance_fig)
     variance_rows = [
         {"Transition": item.tag, "Stage": item.stage, "Variance share (%)": float(share)}
-        for item, share in zip(PERT_ACTIVITIES, shares)
+        for item, share in zip(active_pert_activities, shares)
     ]
     st.dataframe(variance_rows, use_container_width=True, hide_index=True)
 
