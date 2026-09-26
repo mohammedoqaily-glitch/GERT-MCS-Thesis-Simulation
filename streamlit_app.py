@@ -36,6 +36,7 @@ from dashboard_analysis import (
     convergence_figure,
 )
 
+# Redeploy trigger: stable dashboard baseline after rollback.
 st.set_page_config(
     page_title="GERT–MCS VO Lifecycle Simulator",
     page_icon="📊",
