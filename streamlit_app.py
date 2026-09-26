@@ -83,6 +83,64 @@ st.info(
     "reproduction dashboard is fully verified."
 )
 
+
+st.subheader("Model inputs")
+st.caption(
+    "Read-only display of the complete thesis baseline inputs. Editing will be enabled only after "
+    "this viewer is confirmed stable."
+)
+
+input_tabs = st.tabs(["PERT fixed-route inputs", "GERT network inputs"])
+
+with input_tabs[0]:
+    pert_rows = [
+        {
+            "Arc": item.tag,
+            "Process stage": item.stage,
+            "From": item.predecessor,
+            "To": item.successor,
+            "O": item.optimistic,
+            "ML": item.most_likely,
+            "P": item.pessimistic,
+        }
+        for item in PERT_ACTIVITIES
+    ]
+    st.dataframe(pert_rows, width="stretch", hide_index=True)
+
+with input_tabs[1]:
+    gert_rows = [
+        {
+            "Arc": arc.tag,
+            "From": arc.from_state,
+            "To": arc.to_state,
+            "Probability": arc.probability,
+            "Loop cap": "—" if arc.loop_cap is None else arc.loop_cap,
+            "O": arc.optimistic,
+            "ML": arc.most_likely,
+            "P": arc.pessimistic,
+        }
+        for arc in GERT_ARCS
+    ]
+    st.dataframe(gert_rows, width="stretch", hide_index=True)
+
+    routing_totals = {}
+    for arc in GERT_ARCS:
+        routing_totals.setdefault(arc.from_state, 0.0)
+        routing_totals[arc.from_state] += arc.probability
+    st.markdown("#### XOR routing totals")
+    st.dataframe(
+        [
+            {
+                "Branching state": state,
+                "Σp": total,
+                "Status": "PASS" if abs(total - 1.0) <= 1e-12 else "FAIL",
+            }
+            for state, total in routing_totals.items()
+        ],
+        width="stretch",
+        hide_index=True,
+    )
+
 if not run_button:
     st.markdown(
         """
