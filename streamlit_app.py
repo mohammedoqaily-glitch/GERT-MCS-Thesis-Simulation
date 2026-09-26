@@ -92,6 +92,12 @@ st.info(
 
 st.subheader("Model inputs")
 
+EDITOR_VERSION = "routing-editable-v2"
+if st.session_state.get("_editor_version") != EDITOR_VERSION:
+    st.session_state["_editor_version"] = EDITOR_VERSION
+    st.session_state.pop("duration_editor", None)
+    st.session_state.pop("custom_input_editor_v2", None)
+
 if "custom_duration_rows" not in st.session_state:
     st.session_state.custom_duration_rows = [
         {
@@ -145,8 +151,8 @@ if scenario_mode == "Thesis baseline":
         st.dataframe(gert_rows, width="stretch", hide_index=True)
 else:
     st.caption(
-        "Edit all GERT duration triplets below. PERT common-route durations are synchronized "
-        "automatically from the matching GERT arcs to preserve the controlled comparison."
+        "Edit the GERT routing probabilities and all O/ML/P duration triplets below. "
+        "PERT common-route durations are synchronized automatically from matching GERT arcs."
     )
     edited = st.data_editor(
         st.session_state.custom_duration_rows,
@@ -160,7 +166,7 @@ else:
             "ML": st.column_config.NumberColumn("ML", min_value=0.0, step=1.0),
             "P": st.column_config.NumberColumn("P", min_value=0.0, step=1.0),
         },
-        key="duration_editor",
+        key="custom_input_editor_v2",
     )
     if hasattr(edited, "to_dict"):
         st.session_state.custom_duration_rows = edited.to_dict("records")
@@ -227,6 +233,7 @@ else:
             for arc in GERT_ARCS
         ]
         st.session_state.pop("duration_editor", None)
+        st.session_state.pop("custom_input_editor_v2", None)
         st.rerun()
 
 routing_totals = {}
