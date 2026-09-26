@@ -56,6 +56,19 @@ def json_bytes(obj: object) -> bytes:
     return json.dumps(obj, indent=2).encode("utf-8")
 
 
+def restore_custom_defaults() -> None:
+    st.session_state.custom_pert_df = thesis_pert_dataframe()
+    st.session_state.custom_gert_df = thesis_gert_dataframe()
+    st.session_state.custom_replications = 50_000
+    st.session_state.custom_seed = 42
+    st.session_state.custom_distribution = "Beta-PERT"
+    st.session_state.custom_lambda = 4.0
+    st.session_state.custom_max_steps = 100_000
+    st.session_state.pop("pert_editor", None)
+    st.session_state.pop("gert_editor", None)
+    st.session_state.pop("custom_results", None)
+
+
 @st.cache_data(show_spinner=False)
 def run_thesis_simulation(replications: int, seed: int):
     validate_model(PERT_ACTIVITIES, GERT_ARCS)
@@ -390,15 +403,11 @@ else:
             key="custom_max_steps",
         )
 
-        if st.button("Restore all thesis defaults", use_container_width=True):
-            st.session_state.custom_pert_df = thesis_pert_dataframe()
-            st.session_state.custom_gert_df = thesis_gert_dataframe()
-            st.session_state.custom_replications = 50_000
-            st.session_state.custom_seed = 42
-            st.session_state.custom_distribution = "Beta-PERT"
-            st.session_state.custom_lambda = 4.0
-            st.session_state.custom_max_steps = 100_000
-            st.rerun()
+        st.button(
+            "Restore all thesis defaults",
+            use_container_width=True,
+            on_click=restore_custom_defaults,
+        )
 
     with pert_tab:
         st.subheader("Complete PERT fixed-route duration inputs")
