@@ -151,22 +151,37 @@ def validate_routing_probabilities(df: pd.DataFrame) -> list[dict[str, str]]:
 
 def validate_loop_caps(df: pd.DataFrame) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
+    required_loop_tags = {arc.tag for arc in GERT_ARCS if arc.loop_cap is not None}
     for _, row in df.iterrows():
         tag = str(row["tag"])
         value = row["loop_cap"]
+        is_required_loop = tag in required_loop_tags
         if pd.isna(value) or value == "":
+            rows.append(
+                {
+                    "Item": tag,
+                    "Check": "Loop-cap assignment",
+                    "Status": "FAIL" if is_required_loop else "PASS",
+                    "Detail": "Required capped return arc has no cap." if is_required_loop else "No cap required.",
+                }
+            )
             continue
         try:
             numeric = float(value)
-            ok = numeric.is_integer() and numeric >= 0
-            detail = f"cap={value}"
+            valid_integer = numeric.is_integer() and numeric >= 0
+            ok = valid_integer and is_required_loop
+            detail = (
+                f"cap={int(numeric)}"
+                if is_required_loop
+                else "This arc is not a thesis return/self-loop and must not have a cap."
+            )
         except Exception as exc:
             ok = False
             detail = str(exc)
         rows.append(
             {
                 "Item": tag,
-                "Check": "Loop cap is a non-negative integer",
+                "Check": "Loop-cap assignment",
                 "Status": "PASS" if ok else "FAIL",
                 "Detail": detail,
             }
