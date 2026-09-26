@@ -107,6 +107,8 @@ if "custom_duration_rows" not in st.session_state:
         for arc in GERT_ARCS
     ]
 
+duration_errors = []
+
 if scenario_mode == "Thesis baseline":
     st.caption("Authoritative thesis inputs (read-only).")
     input_tabs = st.tabs(["PERT fixed-route inputs", "GERT network inputs"])
@@ -161,7 +163,6 @@ else:
     )
     st.session_state.custom_duration_rows = edited.to_dict("records")
 
-    duration_errors = []
     for row in st.session_state.custom_duration_rows:
         try:
             o, ml, p = float(row["O"]), float(row["ML"]), float(row["P"])
@@ -213,6 +214,10 @@ st.dataframe(
     width="stretch",
     hide_index=True,
 )
+
+if run_button and scenario_mode == "Custom duration scenario" and duration_errors:
+    st.error("Simulation was not started because the custom duration inputs are invalid.")
+    st.stop()
 
 if not run_button:
     st.markdown(
