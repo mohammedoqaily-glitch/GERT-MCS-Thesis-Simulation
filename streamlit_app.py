@@ -113,7 +113,15 @@ if "custom_duration_rows" not in st.session_state:
         for arc in GERT_ARCS
     ]
 
+if "custom_loop_caps" not in st.session_state:
+    st.session_state.custom_loop_caps = [
+        {"Arc": arc.tag, "From": arc.from_state, "To": arc.to_state, "Loop cap": int(arc.loop_cap)}
+        for arc in GERT_ARCS
+        if arc.loop_cap is not None
+    ]
+
 duration_errors = []
+loop_cap_errors = []
 
 if scenario_mode == "Thesis baseline":
     st.caption("Authoritative thesis inputs (read-only).")
@@ -218,6 +226,42 @@ else:
     else:
         st.success("All routing probabilities are within [0,1] and each XOR group sums to 1.")
 
+    st.markdown("#### Loop-cap settings")
+    edited_caps = st.data_editor(
+        st.session_state.custom_loop_caps,
+        width="stretch",
+        hide_index=True,
+        num_rows="fixed",
+        disabled=["Arc", "From", "To"],
+        column_config={
+            "Loop cap": st.column_config.NumberColumn(
+                "Loop cap", min_value=0, max_value=20, step=1, format="%d"
+            ),
+        },
+        key="loop_cap_editor_v1",
+    )
+    if hasattr(edited_caps, "to_dict"):
+        st.session_state.custom_loop_caps = edited_caps.to_dict("records")
+    else:
+        st.session_state.custom_loop_caps = [dict(row) for row in edited_caps]
+
+    for row in st.session_state.custom_loop_caps:
+        try:
+            cap = float(row["Loop cap"])
+            if cap < 0 or not cap.is_integer():
+                loop_cap_errors.append(
+                    f'{row["Arc"]}: loop cap must be a non-negative integer; received {cap:g}.'
+                )
+        except Exception:
+            loop_cap_errors.append(f'{row["Arc"]}: loop cap must be numeric.')
+
+    if loop_cap_errors:
+        st.error("Loop-cap validation failed.")
+        for error in loop_cap_errors:
+            st.write("• " + error)
+    else:
+        st.success("All 10 bounded-recurrence loop caps are valid non-negative integers.")
+
     if st.button("Restore thesis input defaults", width="stretch"):
         st.session_state.custom_duration_rows = [
             {
@@ -232,8 +276,14 @@ else:
             }
             for arc in GERT_ARCS
         ]
+        st.session_state.custom_loop_caps = [
+            {"Arc": arc.tag, "From": arc.from_state, "To": arc.to_state, "Loop cap": int(arc.loop_cap)}
+            for arc in GERT_ARCS
+            if arc.loop_cap is not None
+        ]
         st.session_state.pop("duration_editor", None)
         st.session_state.pop("custom_input_editor_v2", None)
+        st.session_state.pop("loop_cap_editor_v1", None)
         st.rerun()
 
 routing_totals = {}
@@ -260,7 +310,7 @@ st.dataframe(
     hide_index=True,
 )
 
-if run_button and scenario_mode == "Custom input scenario" and (duration_errors or routing_errors):
+if run_button and scenario_mode == "Custom input scenario" and (duration_errors or routing_errors or loop_cap_errors):
     st.error("Simulation was not started because one or more custom inputs are invalid.")
     st.stop()
 
@@ -286,10 +336,14 @@ with st.spinner("Running PERT–MCS and GERT–MCS and preparing analytical outp
         pert, gert, summary = run_thesis_simulation(int(replications), int(seed))
     else:
         custom_by_tag = {row["Arc"]: row for row in st.session_state.custom_duration_rows}
+        custom_caps = {
+            row["Arc"]: int(float(row["Loop cap"])) for row in st.session_state.custom_loop_caps
+        }
         active_gert_arcs = tuple(
             replace(
                 arc,
                 probability=float(custom_by_tag[arc.tag]["Probability"]),
+                loop_cap=custom_caps.get(arc.tag, arc.loop_cap),
                 optimistic=float(custom_by_tag[arc.tag]["O"]),
                 most_likely=float(custom_by_tag[arc.tag]["ML"]),
                 pessimistic=float(custom_by_tag[arc.tag]["P"]),
