@@ -227,33 +227,36 @@ else:
         st.success("All routing probabilities are within [0,1] and each XOR group sums to 1.")
 
     st.markdown("#### Loop-cap settings")
-    edited_caps = st.data_editor(
-        st.session_state.custom_loop_caps,
-        width="stretch",
-        hide_index=True,
-        num_rows="fixed",
-        disabled=["Arc", "From", "To"],
-        column_config={
-            "Loop cap": st.column_config.NumberColumn(
-                "Loop cap", min_value=0, max_value=20, step=1, format="%d"
-            ),
-        },
-        key="loop_cap_editor_v1",
-    )
-    if hasattr(edited_caps, "to_dict"):
-        st.session_state.custom_loop_caps = edited_caps.to_dict("records")
-    else:
-        st.session_state.custom_loop_caps = [dict(row) for row in edited_caps]
+    st.caption("Edit the maximum permitted traversals for each bounded feedback/self-loop arc.")
+
+    updated_caps = []
+    cap_cols = st.columns(2)
+    for idx, row in enumerate(st.session_state.custom_loop_caps):
+        with cap_cols[idx % 2]:
+            cap_value = st.number_input(
+                f'{row["Arc"]} ({row["From"]}→{row["To"]})',
+                min_value=0,
+                max_value=20,
+                value=int(row["Loop cap"]),
+                step=1,
+                key=f'loop_cap_input_v2_{row["Arc"]}',
+            )
+        updated_caps.append(
+            {
+                "Arc": row["Arc"],
+                "From": row["From"],
+                "To": row["To"],
+                "Loop cap": int(cap_value),
+            }
+        )
+    st.session_state.custom_loop_caps = updated_caps
 
     for row in st.session_state.custom_loop_caps:
-        try:
-            cap = float(row["Loop cap"])
-            if cap < 0 or not cap.is_integer():
-                loop_cap_errors.append(
-                    f'{row["Arc"]}: loop cap must be a non-negative integer; received {cap:g}.'
-                )
-        except Exception:
-            loop_cap_errors.append(f'{row["Arc"]}: loop cap must be numeric.')
+        cap = row["Loop cap"]
+        if not isinstance(cap, int) or cap < 0:
+            loop_cap_errors.append(
+                f'{row["Arc"]}: loop cap must be a non-negative integer; received {cap}.'
+            )
 
     if loop_cap_errors:
         st.error("Loop-cap validation failed.")
@@ -284,6 +287,9 @@ else:
         st.session_state.pop("duration_editor", None)
         st.session_state.pop("custom_input_editor_v2", None)
         st.session_state.pop("loop_cap_editor_v1", None)
+        for arc in GERT_ARCS:
+            if arc.loop_cap is not None:
+                st.session_state.pop(f"loop_cap_input_v2_{arc.tag}", None)
         st.rerun()
 
 routing_totals = {}
