@@ -64,7 +64,7 @@ with st.sidebar:
     st.header("Simulation settings")
     scenario_mode = st.radio(
         "Input mode",
-        ["Thesis baseline", "Custom duration scenario"],
+        ["Thesis baseline", "Custom input scenario"],
         index=0,
     )
     replications = st.number_input(
@@ -84,9 +84,9 @@ with st.sidebar:
     run_button = st.button("Run full thesis dashboard", type="primary", use_container_width=True)
 
 st.info(
-    "The thesis baseline reproduces the verified model. Custom duration mode allows the complete "
-    "O/ML/P duration set to be edited while keeping routing probabilities, loop caps, network "
-    "topology, RNG logic, and rounding rules fixed."
+    "The thesis baseline reproduces the verified model. Custom input mode allows all O/ML/P duration "
+    "triplets and GERT routing probabilities to be edited while keeping loop caps, network topology, "
+    "RNG logic, and rounding rules fixed."
 )
 
 
@@ -153,8 +153,9 @@ else:
         width="stretch",
         hide_index=True,
         num_rows="fixed",
-        disabled=["Arc", "From", "To", "Probability", "Loop cap"],
+        disabled=["Arc", "From", "To", "Loop cap"],
         column_config={
+            "Probability": st.column_config.NumberColumn("Probability", min_value=0.0, max_value=1.0, step=0.01, format="%.4f"),
             "O": st.column_config.NumberColumn("O", min_value=0.0, step=1.0),
             "ML": st.column_config.NumberColumn("ML", min_value=0.0, step=1.0),
             "P": st.column_config.NumberColumn("P", min_value=0.0, step=1.0),
@@ -176,6 +177,27 @@ else:
         except Exception:
             duration_errors.append(f'{row["Arc"]}: duration values must be numeric.')
 
+    routing_errors = []
+    custom_routing_totals = {}
+    for row in st.session_state.custom_duration_rows:
+        state = str(row["From"])
+        try:
+            probability = float(row["Probability"])
+            if not (0.0 <= probability <= 1.0):
+                routing_errors.append(
+                    f'{row["Arc"]}: probability must be between 0 and 1; received {probability:g}.'
+                )
+            custom_routing_totals.setdefault(state, 0.0)
+            custom_routing_totals[state] += probability
+        except Exception:
+            routing_errors.append(f'{row["Arc"]}: probability must be numeric.')
+
+    for state, total in custom_routing_totals.items():
+        if abs(total - 1.0) > 1e-12:
+            routing_errors.append(
+                f'{state}: outgoing probabilities must sum to 1.000000; current sum={total:.6f}.'
+            )
+
     if duration_errors:
         st.error("Duration-input validation failed.")
         for error in duration_errors:
@@ -183,7 +205,14 @@ else:
     else:
         st.success("All duration triplets satisfy 0 ≤ O ≤ ML ≤ P.")
 
-    if st.button("Restore thesis duration defaults", width="stretch"):
+    if routing_errors:
+        st.error("Routing-probability validation failed.")
+        for error in routing_errors:
+            st.write("• " + error)
+    else:
+        st.success("All routing probabilities are within [0,1] and each XOR group sums to 1.")
+
+    if st.button("Restore thesis input defaults", width="stretch"):
         st.session_state.custom_duration_rows = [
             {
                 "Arc": arc.tag,
@@ -201,9 +230,15 @@ else:
         st.rerun()
 
 routing_totals = {}
-for arc in GERT_ARCS:
-    routing_totals.setdefault(arc.from_state, 0.0)
-    routing_totals[arc.from_state] += arc.probability
+if scenario_mode == "Thesis baseline":
+    for arc in GERT_ARCS:
+        routing_totals.setdefault(arc.from_state, 0.0)
+        routing_totals[arc.from_state] += arc.probability
+else:
+    for row in st.session_state.custom_duration_rows:
+        state = str(row["From"])
+        routing_totals.setdefault(state, 0.0)
+        routing_totals[state] += float(row["Probability"])
 st.markdown("#### XOR routing totals")
 st.dataframe(
     [
@@ -218,8 +253,8 @@ st.dataframe(
     hide_index=True,
 )
 
-if run_button and scenario_mode == "Custom duration scenario" and duration_errors:
-    st.error("Simulation was not started because the custom duration inputs are invalid.")
+if run_button and scenario_mode == "Custom input scenario" and (duration_errors or routing_errors):
+    st.error("Simulation was not started because one or more custom inputs are invalid.")
     st.stop()
 
 if not run_button:
@@ -247,6 +282,7 @@ with st.spinner("Running PERT–MCS and GERT–MCS and preparing analytical outp
         active_gert_arcs = tuple(
             replace(
                 arc,
+                probability=float(custom_by_tag[arc.tag]["Probability"]),
                 optimistic=float(custom_by_tag[arc.tag]["O"]),
                 most_likely=float(custom_by_tag[arc.tag]["ML"]),
                 pessimistic=float(custom_by_tag[arc.tag]["P"]),
